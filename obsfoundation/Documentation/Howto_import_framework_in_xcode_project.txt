@@ -1,0 +1,36 @@
+[ http://developer.apple.com/mac/library/documentation/MacOSX/Conceptual/BPFrameworks/Tasks/CreatingFrameworks.html ]
+
+Using Separate Xcode Projects For Each Target
+
+If you already have separate Xcode projects for your framework and application, you can take advantage of Xcode's cross-project references to embed the framework in your application. Cross-project references are a convenient way to create relationships between two separate Xcode projects. To set up a cross-project reference between your application and framework, you would do the following:
+
+In your application project, choose Project > Add to Project and select your framework's .xcodeproj file. Xcode adds the framework project and displays its products in the Groups & Files pane of your application project.
+Modify the Build Products Path setting for both the application and framework targets so that they use the same build directory. You need to modify each target in their original Xcode project file.
+
+In your application project, modify the Header Search Paths setting of the application target by adding the directories containing any framework header files.
+Once you have configured your Xcode projects to build properly, you can proceed with the configuration steps needed to embed the framework in your application. The remaining configuration steps for the framework and application targets are identical to the ones described in “Using a Single Xcode Project For Both Targets. Your framework's installation directory must be configured to be relative to the executable path of the application. SImilarly, the application target must copy the framework to its bundle and set up the necessary linkage and dependencies. The only difference is that you must configure each target in its own Xcode project.
+
+Using a Single Xcode Project For Both Targets
+Using a single Xcode project for both your application and framework target simplifies the required setup. Once you create your project, you simply add two targets to it: one for your application and one for your framework. (Because both targets reside in the same project, there are no problems finding source files from either target at build time.) After that, you simply configure your framework and application targets with the proper runtime information for embedding.
+
+The configuration for your framework target involves telling it where it will be installed. The framework needs this information so that it can find the resources it needs. Because frameworks are typically installed in fixed locations, you normally specify the full path to the appropriate frameworks directory. When you embed a framework inside a bundle, however, the location of the framework is not fixed, so you have to use the @executable_path placeholder to let the framework know its location is relative to the current executable.
+
+Open an inspector for your framework target and select the Build tab.
+Set the value of the Installation Directory build setting to @executable_path/../Frameworks.
+At build time, Xcode builds your framework and puts the results in the build directory. Before the application can use the framework, however, you must configure the application target as follows:
+
+You need to copy the framework into the application’s bundle.
+You need to link the application against the framework.
+You need to create a build dependency between the framework and application.
+The following steps show you how to configure your application target.
+
+In the Group & Files pane, open your application target to view its current build phases.
+Drag your framework product (located in the Products folder) to the existing Link Binary With Libraries build phase of your application target. This causes the application to link against your framework.
+Add a new Copy Files Build Phase to the application target. (This phase will be used to install the framework in the application bundle.)
+Select the new build phase and open an inspector window.
+In the General tab of the inspector window, set the destination for the build phase to “Frameworks”.
+Drag your framework product to the new build phase.
+Select the application target again and open the inspector window.
+In the General tab of the inspector window, add your framework as a dependency for the application. Adding this dependency causes Xcode to build the framework target before building the application target.
+The build dependency you establish in the application target causes the framework to be built before the application. This is important because it guarantees that a built version of your framework will be available to link against and to embed in the application. Because of this dependency, you can set the active target of your Xcode project to your application and leave it there. Building the application now builds the framework and copies it to the application bundle directory, creating the necessary linkage between the two.
+

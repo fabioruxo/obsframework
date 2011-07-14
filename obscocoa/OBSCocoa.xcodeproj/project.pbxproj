@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		747A80EE1348727A00280319 /* NSImage+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A80EB1348727A00280319 /* NSImage+ObjectiveSheep.m */; };
+		747A80EF1348727A00280319 /* OBSColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A80ED1348727A00280319 /* OBSColoredView.m */; };
+		747A80F21348739600280319 /* OBSSplitViewVerticalSecondaryRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A80F11348739600280319 /* OBSSplitViewVerticalSecondaryRight.m */; };
+		770B37ED0679A11B001EADE2 /* OBSCocoa_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* OBSCocoa_DataModel.xcdatamodel */; };
+		77C8280E06725ACE000B614F /* OBSCocoa_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* OBSCocoa_AppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E51CC9351291908300F75DA2 /* NSOutlineView+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC92D1291908300F75DA2 /* NSOutlineView+ObjectiveSheep.m */; };
+		E51CC9361291908300F75DA2 /* NSTextView+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC92F1291908300F75DA2 /* NSTextView+ObjectiveSheep.m */; };
+		E51CC9371291908300F75DA2 /* OBSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC9321291908300F75DA2 /* OBSTask.m */; };
+		E51CC9381291908300F75DA2 /* OBSTaskOutputReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC9341291908300F75DA2 /* OBSTaskOutputReader.m */; };
+		E51CC94C129190C600F75DA2 /* NSArray+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC93E129190C600F75DA2 /* NSArray+ObjectiveSheep.m */; };
+		E51CC94D129190C600F75DA2 /* NSDate+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC940129190C600F75DA2 /* NSDate+ObjectiveSheep.m */; };
+		E51CC94E129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC942129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m */; };
+		E51CC94F129190C600F75DA2 /* NSString+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC944129190C600F75DA2 /* NSString+ObjectiveSheep.m */; };
+		E51CC950129190C600F75DA2 /* OBSDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC947129190C600F75DA2 /* OBSDownloader.m */; };
+		E51CC957129190D200F75DA2 /* OBSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */; };
+		E51CC958129190D200F75DA2 /* OBSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC956129190D200F75DA2 /* OBSEntity.m */; };
+		E53B51B913422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B51B813422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* OBSCocoa_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCocoa_Prefix.pch; sourceTree = "<group>"; };
+		747A80EA1348727A00280319 /* NSImage+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		747A80EB1348727A00280319 /* NSImage+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		747A80EC1348727A00280319 /* OBSColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = OBSColoredView.h; sourceTree = "<group>"; };
+		747A80ED1348727A00280319 /* OBSColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSColoredView.m; sourceTree = "<group>"; };
+		747A80F01348739600280319 /* OBSSplitViewVerticalSecondaryRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSSplitViewVerticalSecondaryRight.h; sourceTree = "<group>"; };
+		747A80F11348739600280319 /* OBSSplitViewVerticalSecondaryRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSSplitViewVerticalSecondaryRight.m; sourceTree = "<group>"; };
+		770B37EC0679A11B001EADE2 /* OBSCocoa_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = OBSCocoa_DataModel.xcdatamodel; sourceTree = "<group>"; };
+		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		77C8280B06725ACE000B614F /* OBSCocoa_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCocoa_AppDelegate.h; sourceTree = "<group>"; };
+		77C8280C06725ACE000B614F /* OBSCocoa_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSCocoa_AppDelegate.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* OBSCocoa-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "OBSCocoa-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* OBSCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBSCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51080D11291917C00FDC770 /* OBSCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCocoa.h; sourceTree = "<group>"; };
+		E51CC92C1291908300F75DA2 /* NSOutlineView+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOutlineView+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC92D1291908300F75DA2 /* NSOutlineView+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOutlineView+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC92E1291908300F75DA2 /* NSTextView+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC92F1291908300F75DA2 /* NSTextView+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC9311291908300F75DA2 /* OBSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSTask.h; sourceTree = "<group>"; };
+		E51CC9321291908300F75DA2 /* OBSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSTask.m; sourceTree = "<group>"; };
+		E51CC9331291908300F75DA2 /* OBSTaskOutputReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSTaskOutputReader.h; sourceTree = "<group>"; };
+		E51CC9341291908300F75DA2 /* OBSTaskOutputReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSTaskOutputReader.m; sourceTree = "<group>"; };
+		E51CC93D129190C600F75DA2 /* NSArray+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC93E129190C600F75DA2 /* NSArray+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC93F129190C600F75DA2 /* NSDate+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC940129190C600F75DA2 /* NSDate+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC941129190C600F75DA2 /* NSFileManager+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC942129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC943129190C600F75DA2 /* NSString+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E51CC944129190C600F75DA2 /* NSString+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E51CC946129190C600F75DA2 /* OBSDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSDownloader.h; sourceTree = "<group>"; };
+		E51CC947129190C600F75DA2 /* OBSDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSDownloader.m; sourceTree = "<group>"; };
+		E51CC948129190C600F75DA2 /* ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSheep.h; sourceTree = "<group>"; };
+		E51CC949129190C600F75DA2 /* OBSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSMacros.h; sourceTree = "<group>"; };
+		E51CC94B129190C600F75DA2 /* OBSRegexConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSRegexConstants.h; sourceTree = "<group>"; };
+		E51CC952129190D200F75DA2 /* OBSCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCoreData.h; sourceTree = "<group>"; };
+		E51CC953129190D200F75DA2 /* OBSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCoreDataManager.h; sourceTree = "<group>"; };
+		E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSCoreDataManager.m; sourceTree = "<group>"; };
+		E51CC955129190D200F75DA2 /* OBSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSEntity.h; sourceTree = "<group>"; };
+		E51CC956129190D200F75DA2 /* OBSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSEntity.m; sourceTree = "<group>"; };
+		E53B51B713422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSSplitViewVerticalSecondaryLeft.h; sourceTree = "<group>"; };
+		E53B51B813422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSSplitViewVerticalSecondaryLeft.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				77C8280B06725ACE000B614F /* OBSCocoa_AppDelegate.h */,
+				77C8280C06725ACE000B614F /* OBSCocoa_AppDelegate.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C82804067257F0000B614F /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* OBSCocoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* OBSCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC951129190D200F75DA2 /* OBSCoreData */,
+				E51CC93B129190C600F75DA2 /* OBSFoundation */,
+				E51CC92A1291908300F75DA2 /* OBSCocoa */,
+				7756732906782D8800D1FEB8 /* Models */,
+				080E96DDFE201D6D7F000001 /* Test */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = OBSCocoa;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* OBSCocoa_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* OBSCocoa-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7756732906782D8800D1FEB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				770B37EC0679A11B001EADE2 /* OBSCocoa_DataModel.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E51CC92A1291908300F75DA2 /* OBSCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				E51080D11291917C00FDC770 /* OBSCocoa.h */,
+				E51CC92B1291908300F75DA2 /* Cocoa */,
+				E51CC9301291908300F75DA2 /* Tasks */,
+			);
+			path = OBSCocoa;
+			sourceTree = "<group>";
+		};
+		E51CC92B1291908300F75DA2 /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				747A80EA1348727A00280319 /* NSImage+ObjectiveSheep.h */,
+				747A80EB1348727A00280319 /* NSImage+ObjectiveSheep.m */,
+				747A80EC1348727A00280319 /* OBSColoredView.h */,
+				747A80ED1348727A00280319 /* OBSColoredView.m */,
+				E53B51B713422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.h */,
+				E53B51B813422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m */,
+				747A80F01348739600280319 /* OBSSplitViewVerticalSecondaryRight.h */,
+				747A80F11348739600280319 /* OBSSplitViewVerticalSecondaryRight.m */,
+				E51CC92C1291908300F75DA2 /* NSOutlineView+ObjectiveSheep.h */,
+				E51CC92D1291908300F75DA2 /* NSOutlineView+ObjectiveSheep.m */,
+				E51CC92E1291908300F75DA2 /* NSTextView+ObjectiveSheep.h */,
+				E51CC92F1291908300F75DA2 /* NSTextView+ObjectiveSheep.m */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		E51CC9301291908300F75DA2 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC9311291908300F75DA2 /* OBSTask.h */,
+				E51CC9321291908300F75DA2 /* OBSTask.m */,
+				E51CC9331291908300F75DA2 /* OBSTaskOutputReader.h */,
+				E51CC9341291908300F75DA2 /* OBSTaskOutputReader.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		E51CC93B129190C600F75DA2 /* OBSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC93C129190C600F75DA2 /* Foundation */,
+				E51CC945129190C600F75DA2 /* Network */,
+				E51CC948129190C600F75DA2 /* ObjectiveSheep.h */,
+				E51CC949129190C600F75DA2 /* OBSMacros.h */,
+				E51CC94A129190C600F75DA2 /* Regex */,
+			);
+			name = OBSFoundation;
+			path = ../OBSFoundation/OBSFoundation;
+			sourceTree = SOURCE_ROOT;
+		};
+		E51CC93C129190C600F75DA2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC93D129190C600F75DA2 /* NSArray+ObjectiveSheep.h */,
+				E51CC93E129190C600F75DA2 /* NSArray+ObjectiveSheep.m */,
+				E51CC93F129190C600F75DA2 /* NSDate+ObjectiveSheep.h */,
+				E51CC940129190C600F75DA2 /* NSDate+ObjectiveSheep.m */,
+				E51CC941129190C600F75DA2 /* NSFileManager+ObjectiveSheep.h */,
+				E51CC942129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m */,
+				E51CC943129190C600F75DA2 /* NSString+ObjectiveSheep.h */,
+				E51CC944129190C600F75DA2 /* NSString+ObjectiveSheep.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E51CC945129190C600F75DA2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC946129190C600F75DA2 /* OBSDownloader.h */,
+				E51CC947129190C600F75DA2 /* OBSDownloader.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E51CC94A129190C600F75DA2 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC94B129190C600F75DA2 /* OBSRegexConstants.h */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		E51CC951129190D200F75DA2 /* OBSCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E51CC952129190D200F75DA2 /* OBSCoreData.h */,
+				E51CC953129190D200F75DA2 /* OBSCoreDataManager.h */,
+				E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */,
+				E51CC955129190D200F75DA2 /* OBSEntity.h */,
+				E51CC956129190D200F75DA2 /* OBSEntity.m */,
+			);
+			name = OBSCoreData;
+			path = ../OBSCoreData/OBSCoreData;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* OBSCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "OBSCocoa" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBSCocoa;
+			productInstallPath = "$(HOME)/Applications";
+			productName = OBSCocoa;
+			productReference = 8D1107320486CEB800E47090 /* OBSCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "OBSCocoa" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* OBSCocoa */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* OBSCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				77C8280E06725ACE000B614F /* OBSCocoa_AppDelegate.m in Sources */,
+				770B37ED0679A11B001EADE2 /* OBSCocoa_DataModel.xcdatamodel in Sources */,
+				E51CC9351291908300F75DA2 /* NSOutlineView+ObjectiveSheep.m in Sources */,
+				E51CC9361291908300F75DA2 /* NSTextView+ObjectiveSheep.m in Sources */,
+				E51CC9371291908300F75DA2 /* OBSTask.m in Sources */,
+				E51CC9381291908300F75DA2 /* OBSTaskOutputReader.m in Sources */,
+				E51CC94C129190C600F75DA2 /* NSArray+ObjectiveSheep.m in Sources */,
+				E51CC94D129190C600F75DA2 /* NSDate+ObjectiveSheep.m in Sources */,
+				E51CC94E129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m in Sources */,
+				E51CC94F129190C600F75DA2 /* NSString+ObjectiveSheep.m in Sources */,
+				E51CC950129190C600F75DA2 /* OBSDownloader.m in Sources */,
+				E51CC957129190D200F75DA2 /* OBSCoreDataManager.m in Sources */,
+				E51CC958129190D200F75DA2 /* OBSEntity.m in Sources */,
+				E53B51B913422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m in Sources */,
+				747A80EE1348727A00280319 /* NSImage+ObjectiveSheep.m in Sources */,
+				747A80EF1348727A00280319 /* OBSColoredView.m in Sources */,
+				747A80F21348739600280319 /* OBSSplitViewVerticalSecondaryRight.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7446980DB6B7EA00F9684A /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0A850875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OBSCocoa_Prefix.pch;
+				INFOPLIST_FILE = "OBSCocoa-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = OBSCocoa;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26FC0A860875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OBSCocoa_Prefix.pch;
+				INFOPLIST_FILE = "OBSCocoa-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = OBSCocoa;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26FC0A890875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
+			};
+			name = Debug;
+		};
+		26FC0A8A0875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "OBSCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A850875C7B200E6366F /* Debug */,
+				26FC0A860875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "OBSCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A890875C7B200E6366F /* Debug */,
+				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

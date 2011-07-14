@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* GroovyFrog */;
+		codeSenseManager = 7BC8F14D111063F9005FD76B /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					834,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					774,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					810,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 286291570;
+			PBXWorkspaceStateSaveDate = 286291570;
+		};
+		perUserProjectItems = {
+			7BC8F142111063F1005FD76B = 7BC8F142111063F1005FD76B /* PBXTextBookmark */;
+			7BC8F148111063F9005FD76B = 7BC8F148111063F9005FD76B /* PBXTextBookmark */;
+			7BC8F17411107636005FD76B = 7BC8F17411107636005FD76B /* PBXTextBookmark */;
+			7BC8F17511107636005FD76B = 7BC8F17511107636005FD76B /* PBXTextBookmark */;
+			7BC8F17711107636005FD76B = 7BC8F17711107636005FD76B /* PBXTextBookmark */;
+			7BC8F18E11107694005FD76B /* PBXTextBookmark */ = 7BC8F18E11107694005FD76B /* PBXTextBookmark */;
+			7BC8F18F11107694005FD76B /* PBXTextBookmark */ = 7BC8F18F11107694005FD76B /* PBXTextBookmark */;
+		};
+		sourceControlManager = 7BC8F14C111063F9005FD76B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	7BC8F142111063F1005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Pointer targets in passing argument 4 of 'CFCalendarAddComponents' differ in signedness";
+		fRef = E5F8AE3F110F596D00749905 /* GFCalendar.m */;
+		rLen = 1;
+		rLoc = 521;
+		rType = 1;
+	};
+	7BC8F148111063F9005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5F8AE3F110F596D00749905 /* GFCalendar.m */;
+		name = "GFCalendar.m: 522";
+		rLen = 0;
+		rLoc = 11156;
+		rType = 0;
+		vrLen = 793;
+		vrLoc = 10816;
+	};
+	7BC8F14C111063F9005FD76B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = GroovyFrog;
+			};
+		};
+	};
+	7BC8F14D111063F9005FD76B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	7BC8F17411107636005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD77110DA9500017BB38 /* NSString+GroovyFrog.h */;
+		name = "NSString+GroovyFrog.h: 19";
+		rLen = 0;
+		rLoc = 705;
+		rType = 0;
+		vrLen = 752;
+		vrLoc = 0;
+	};
+	7BC8F17511107636005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BC8F17611107636005FD76B /* Stefano.pbxuser */;
+		name = "Stefano.pbxuser: 10";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 0;
+	};
+	7BC8F17611107636005FD76B /* Stefano.pbxuser */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = Stefano.pbxuser;
+		path = /Users/Stefano/workspace/Xcode/GroovyFrog/GroovyFrog.xcodeproj/Stefano.pbxuser;
+		sourceTree = "<absolute>";
+	};
+	7BC8F17711107636005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BC8F17811107636005FD76B /* Stefano.pbxuser */;
+		name = "Stefano.pbxuser: 10";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 0;
+	};
+	7BC8F17811107636005FD76B /* Stefano.pbxuser */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = Stefano.pbxuser;
+		path = /Users/Stefano/workspace/Xcode/GroovyFrog/GroovyFrog.xcodeproj/Stefano.pbxuser;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 2301}}";
+			sepNavSelRange = "{422, 0}";
+			sepNavVisRange = "{0, 915}";
+		};
+	};
+	7BC8F18E11107694005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD77110DA9500017BB38 /* NSString+GroovyFrog.h */;
+		name = "NSString+GroovyFrog.h: 19";
+		rLen = 0;
+		rLoc = 705;
+		rType = 0;
+		vrLen = 751;
+		vrLoc = 0;
+	};
+	7BC8F18F11107694005FD76B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BC8F17811107636005FD76B /* Stefano.pbxuser */;
+		name = "Stefano.pbxuser: 10";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 0;
+	};
+	8DC2EF4F0486A6940098B216 /* GroovyFrog */ = {
+		activeExec = 0;
+	};
+	E5432D7A110CC8F800B9DF5C /* Tests */ = {
+		activeExec = 0;
+	};
+	E548BD77110DA9500017BB38 /* NSString+GroovyFrog.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 364}}";
+			sepNavSelRange = "{705, 0}";
+			sepNavVisRange = "{0, 751}";
+			sepNavWindowFrame = "{{15, 74}, {750, 704}}";
+		};
+	};
+	E5F8AE3F110F596D00749905 /* GFCalendar.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {635, 7592}}";
+			sepNavSelRange = "{11156, 0}";
+			sepNavVisRange = "{10942, 375}";
+		};
+	};
+}

@@ -1,0 +1,160 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E5FF414012918F65007A1025 /* OBSCocoa */;
+		activeTarget = 8D1107260486CEB800E47090 /* OBSCocoa */;
+		addToTargets = (
+		);
+		codeSenseManager = E5FF415412918F67007A1025 /* Code sense */;
+		executables = (
+			E5FF414012918F65007A1025 /* OBSCocoa */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					738,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 311529837;
+			PBXWorkspaceStateSaveDate = 311529837;
+		};
+		perUserProjectItems = {
+			E51080D2129191BB00FDC770 /* PBXTextBookmark */ = E51080D2129191BB00FDC770 /* PBXTextBookmark */;
+			E51080D3129191BB00FDC770 /* PBXTextBookmark */ = E51080D3129191BB00FDC770 /* PBXTextBookmark */;
+			E51080D4129191BB00FDC770 /* PBXTextBookmark */ = E51080D4129191BB00FDC770 /* PBXTextBookmark */;
+			E51CC95B129190EE00F75DA2 /* PBXTextBookmark */ = E51CC95B129190EE00F75DA2 /* PBXTextBookmark */;
+		};
+		sourceControlManager = E5FF415312918F67007A1025 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* OBSCocoa */ = {
+		activeExec = 0;
+		executables = (
+			E5FF414012918F65007A1025 /* OBSCocoa */,
+		);
+	};
+	E51080D11291917C00FDC770 /* OBSCocoa.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {916, 609}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{0, 260}";
+		};
+	};
+	E51080D2129191BB00FDC770 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51CC9331291908300F75DA2 /* OBSTaskOutputReader.h */;
+		name = "OBSTaskOutputReader.h: 14";
+		rLen = 0;
+		rLoc = 607;
+		rType = 0;
+		vrLen = 956;
+		vrLoc = 69;
+	};
+	E51080D3129191BB00FDC770 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51080D11291917C00FDC770 /* OBSCocoa.h */;
+		name = "OBSCocoa.h: 12";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 260;
+		vrLoc = 0;
+	};
+	E51080D4129191BB00FDC770 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51080D11291917C00FDC770 /* OBSCocoa.h */;
+		name = "OBSCocoa.h: 12";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 260;
+		vrLoc = 0;
+	};
+	E51CC9331291908300F75DA2 /* OBSTaskOutputReader.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {916, 665}}";
+			sepNavSelRange = "{607, 0}";
+			sepNavVisRange = "{69, 956}";
+		};
+	};
+	E51CC95B129190EE00F75DA2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51CC95C129190EE00F75DA2 /* OBSMacros.h */;
+		name = "OBSMacros.h: 3";
+		rLen = 0;
+		rLoc = 140;
+		rType = 0;
+		vrLen = 369;
+		vrLoc = 0;
+	};
+	E51CC95C129190EE00F75DA2 /* OBSMacros.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = OBSMacros.h;
+		path = /Users/fabio/Projects/p/OBSFoundation/OBSFoundation/OBSMacros.h;
+		sourceTree = "<absolute>";
+	};
+	E5FF414012918F65007A1025 /* OBSCocoa */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = OBSCocoa;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	E5FF415312918F67007A1025 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E5FF415412918F67007A1025 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

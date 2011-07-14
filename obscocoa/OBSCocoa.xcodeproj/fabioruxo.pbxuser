@@ -1,0 +1,122 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 74F606251291BF12009E96FF /* OBSCocoa */;
+		activeTarget = 8D1107260486CEB800E47090 /* OBSCocoa */;
+		codeSenseManager = 74F6063A1291BF38009E96FF /* Code sense */;
+		executables = (
+			74F606251291BF12009E96FF /* OBSCocoa */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					810,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319113096;
+			PBXWorkspaceStateSaveDate = 319113096;
+		};
+		perUserProjectItems = {
+			7483937C130547A00053AC48 /* PBXTextBookmark */ = 7483937C130547A00053AC48 /* PBXTextBookmark */;
+			74839398130552FC0053AC48 /* PBXTextBookmark */ = 74839398130552FC0053AC48 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 74F606391291BF38009E96FF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	7483937C130547A00053AC48 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51CC93D129190C600F75DA2 /* NSArray+ObjectiveSheep.h */;
+		name = "NSArray+ObjectiveSheep.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 483;
+		vrLoc = 0;
+	};
+	74839398130552FC0053AC48 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E51CC93D129190C600F75DA2 /* NSArray+ObjectiveSheep.h */;
+		name = "NSArray+ObjectiveSheep.h: 1";
+		rLen = 551;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 0;
+	};
+	74F606251291BF12009E96FF /* OBSCocoa */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = OBSCocoa;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	74F606391291BF38009E96FF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	74F6063A1291BF38009E96FF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D1107260486CEB800E47090 /* OBSCocoa */ = {
+		activeExec = 0;
+		executables = (
+			74F606251291BF12009E96FF /* OBSCocoa */,
+		);
+	};
+	E51CC93D129190C600F75DA2 /* NSArray+ObjectiveSheep.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {988, 460}}";
+			sepNavSelRange = "{0, 551}";
+			sepNavVisRange = "{0, 738}";
+		};
+	};
+}

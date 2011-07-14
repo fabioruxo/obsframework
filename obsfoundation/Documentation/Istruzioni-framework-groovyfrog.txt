@@ -1,0 +1,26 @@
+1) Cliccare sul progetto a sx col tasto dx -> add -> existing file -> prendere il file .xcodeproj di GroovyFrog dalla sua cartella di progetto.
+
+2) In entrambi i progetti (GroovyFrog e il progetto in cui inserirlo) andare su progetto ->a info -> build path e mettere sempre ../build/ (è importante che puntino alla stessa cartella di build!)
+
+3) Sempre nella stessa schermate di info filtrare con "header" e cercare la riga "Header search paths" e metterci ../GroovyFrog/ (NON ricorsivo!)
+
+4) Nel target del prodotto andare su Info. Sulla finestra dei framework aggiungere il framework groovyfrog puntando alla dir di build/Release/GroovyFrog.framework
+
+5) Aggiungere un Copy Files al target: con tasto dx-> add new build phase -> copy files -> e nel path inserire:
+
+../build/Release/GroovyFrog.framework
+
+A posto. Il tutto funzionerà avviando l'applicativo in Release mode. IN debug servirà andare in GroovyFrog e compilare anche in debug. Ovviamente l'app in cui è il framework non ricompila il framework stesso se questo viene modificato.
+
+
+Se il progetto in build è configurato per usare il garbage collector fare la stessa cosa nel progetto GroovyFrog e ricompilare.
+
+Ogni progetto dovrebbe avere la garbage collection ma opzionale
+
+
+
+
+
+
+
+

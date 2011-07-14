@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		E53C666F1232589400B279E0 /* OBSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E53C66651232589400B279E0 /* OBSStringTests.m */; };
+		E58056E31275BFEE00AF5171 /* NotificationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E58056DF1275BFEE00AF5171 /* NotificationsTest.m */; };
+		E58056E41275BFEE00AF5171 /* Notified.m in Sources */ = {isa = PBXBuildFile; fileRef = E58056E11275BFEE00AF5171 /* Notified.m */; };
+		E584E8871250D55900383BF2 /* OBSDownloaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E8851250D55900383BF2 /* OBSDownloaderTest.m */; };
+		E590038712782F0F00599E38 /* NSArray+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590036F12782F0F00599E38 /* NSArray+ObjectiveSheep.m */; };
+		E590038812782F0F00599E38 /* NSDate+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037112782F0F00599E38 /* NSDate+ObjectiveSheep.m */; };
+		E590038912782F0F00599E38 /* NSFileManager+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037312782F0F00599E38 /* NSFileManager+ObjectiveSheep.m */; };
+		E590038A12782F0F00599E38 /* NSString+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037512782F0F00599E38 /* NSString+ObjectiveSheep.m */; };
+		E590038D12782F0F00599E38 /* OBSDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037D12782F0F00599E38 /* OBSDownloader.m */; };
+		E590039012782F0F00599E38 /* NSArray+ObjectiveSheep.h in Headers */ = {isa = PBXBuildFile; fileRef = E590036E12782F0F00599E38 /* NSArray+ObjectiveSheep.h */; };
+		E590039112782F0F00599E38 /* NSArray+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590036F12782F0F00599E38 /* NSArray+ObjectiveSheep.m */; };
+		E590039212782F0F00599E38 /* NSDate+ObjectiveSheep.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037012782F0F00599E38 /* NSDate+ObjectiveSheep.h */; };
+		E590039312782F0F00599E38 /* NSDate+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037112782F0F00599E38 /* NSDate+ObjectiveSheep.m */; };
+		E590039412782F0F00599E38 /* NSFileManager+ObjectiveSheep.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037212782F0F00599E38 /* NSFileManager+ObjectiveSheep.h */; };
+		E590039512782F0F00599E38 /* NSFileManager+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037312782F0F00599E38 /* NSFileManager+ObjectiveSheep.m */; };
+		E590039612782F0F00599E38 /* NSString+ObjectiveSheep.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037412782F0F00599E38 /* NSString+ObjectiveSheep.h */; };
+		E590039712782F0F00599E38 /* NSString+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037512782F0F00599E38 /* NSString+ObjectiveSheep.m */; };
+		E590039C12782F0F00599E38 /* OBSDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037C12782F0F00599E38 /* OBSDownloader.h */; };
+		E590039D12782F0F00599E38 /* OBSDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E590037D12782F0F00599E38 /* OBSDownloader.m */; };
+		E590039E12782F0F00599E38 /* ObjectiveSheep.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037E12782F0F00599E38 /* ObjectiveSheep.h */; };
+		E590039F12782F0F00599E38 /* OBSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E590037F12782F0F00599E38 /* OBSMacros.h */; };
+		E59003A012782F0F00599E38 /* OBSRegexConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E590038112782F0F00599E38 /* OBSRegexConstants.h */; };
+		E597D8151237FA9D00D7CE82 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E597D8141237FA9D00D7CE82 /* Notifier.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		E5D87A8A1119A4EF00801CDD /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.app";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "sdef \"$INPUT_FILE_PATH\" | sdp -fh -o \"$DERIVED_FILES_DIR\" --basename \"$INPUT_FILE_BASE\" --bundleid `defaults read \"$INPUT_FILE_PATH/Contents/Info\" CFBundleIdentifier`";
+		};
+		E5D87AC71119AA0C00801CDD /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.app";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "sdef \"$INPUT_FILE_PATH\" | sdp -fh -o \"$DERIVED_FILES_DIR\" --basename \"$INPUT_FILE_BASE\" --bundleid `defaults read \"$INPUT_FILE_PATH/Contents/Info\" CFBundleIdentifier`";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		E5432DF9110CCE4800B9DF5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = GroovyFrog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* ObjectiveSheep_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSheep_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* ObjectiveSheep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveSheep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		E53C66651232589400B279E0 /* OBSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBSStringTests.m; path = Tests/OBSStringTests.m; sourceTree = "<group>"; };
+		E5432D7B110CC8F800B9DF5C /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5432D7C110CC8F800B9DF5C /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		E58056DF1275BFEE00AF5171 /* NotificationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationsTest.m; path = Tests/Notifications/NotificationsTest.m; sourceTree = "<group>"; };
+		E58056E01275BFEE00AF5171 /* Notified.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notified.h; path = Tests/Notifications/Notified.h; sourceTree = "<group>"; };
+		E58056E11275BFEE00AF5171 /* Notified.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notified.m; path = Tests/Notifications/Notified.m; sourceTree = "<group>"; };
+		E58056E21275BFEE00AF5171 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifier.h; path = Tests/Notifications/Notifier.h; sourceTree = "<group>"; };
+		E584E8851250D55900383BF2 /* OBSDownloaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBSDownloaderTest.m; path = Tests/OBSDownloaderTest.m; sourceTree = "<group>"; };
+		E590036E12782F0F00599E38 /* NSArray+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E590036F12782F0F00599E38 /* NSArray+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E590037012782F0F00599E38 /* NSDate+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E590037112782F0F00599E38 /* NSDate+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E590037212782F0F00599E38 /* NSFileManager+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E590037312782F0F00599E38 /* NSFileManager+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E590037412782F0F00599E38 /* NSString+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ObjectiveSheep.h"; sourceTree = "<group>"; };
+		E590037512782F0F00599E38 /* NSString+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjectiveSheep.m"; sourceTree = "<group>"; };
+		E590037C12782F0F00599E38 /* OBSDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSDownloader.h; sourceTree = "<group>"; };
+		E590037D12782F0F00599E38 /* OBSDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSDownloader.m; sourceTree = "<group>"; };
+		E590037E12782F0F00599E38 /* ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSheep.h; sourceTree = "<group>"; };
+		E590037F12782F0F00599E38 /* OBSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSMacros.h; sourceTree = "<group>"; };
+		E590038112782F0F00599E38 /* OBSRegexConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSRegexConstants.h; sourceTree = "<group>"; };
+		E597D8141237FA9D00D7CE82 /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notifier.m; path = Tests/Notifications/Notifier.m; sourceTree = "<group>"; };
+		E5C2E23412196A7C007F265B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5432D78110CC8F800B9DF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* ObjectiveSheep.framework */,
+				E5432D7B110CC8F800B9DF5C /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* GroovyFrog */ = {
+			isa = PBXGroup;
+			children = (
+				E590036C12782F0F00599E38 /* OBSFoundation */,
+				E5432D85110CCA0E00B9DF5C /* Tests */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				E5432D7C110CC8F800B9DF5C /* Tests-Info.plist */,
+				E5C2E23412196A7C007F265B /* CoreData.framework */,
+			);
+			comments = "// comment\n// this is my comment bla bla bla\n";
+			name = GroovyFrog;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* ObjectiveSheep_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		E5432D85110CCA0E00B9DF5C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E597D80F1237FA6B00D7CE82 /* Notifications */,
+				E53C66651232589400B279E0 /* OBSStringTests.m */,
+				E584E8851250D55900383BF2 /* OBSDownloaderTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		E590036C12782F0F00599E38 /* OBSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E590037E12782F0F00599E38 /* ObjectiveSheep.h */,
+				E590037F12782F0F00599E38 /* OBSMacros.h */,
+				E590036D12782F0F00599E38 /* Foundation */,
+				E590037B12782F0F00599E38 /* Network */,
+				E590038012782F0F00599E38 /* Regex */,
+			);
+			path = OBSFoundation;
+			sourceTree = "<group>";
+		};
+		E590036D12782F0F00599E38 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E590036E12782F0F00599E38 /* NSArray+ObjectiveSheep.h */,
+				E590036F12782F0F00599E38 /* NSArray+ObjectiveSheep.m */,
+				E590037012782F0F00599E38 /* NSDate+ObjectiveSheep.h */,
+				E590037112782F0F00599E38 /* NSDate+ObjectiveSheep.m */,
+				E590037212782F0F00599E38 /* NSFileManager+ObjectiveSheep.h */,
+				E590037312782F0F00599E38 /* NSFileManager+ObjectiveSheep.m */,
+				E590037412782F0F00599E38 /* NSString+ObjectiveSheep.h */,
+				E590037512782F0F00599E38 /* NSString+ObjectiveSheep.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E590037B12782F0F00599E38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E590037C12782F0F00599E38 /* OBSDownloader.h */,
+				E590037D12782F0F00599E38 /* OBSDownloader.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E590038012782F0F00599E38 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				E590038112782F0F00599E38 /* OBSRegexConstants.h */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		E597D80F1237FA6B00D7CE82 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				E58056DF1275BFEE00AF5171 /* NotificationsTest.m */,
+				E58056E01275BFEE00AF5171 /* Notified.h */,
+				E58056E11275BFEE00AF5171 /* Notified.m */,
+				E58056E21275BFEE00AF5171 /* Notifier.h */,
+				E597D8141237FA9D00D7CE82 /* Notifier.m */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E590039012782F0F00599E38 /* NSArray+ObjectiveSheep.h in Headers */,
+				E590039212782F0F00599E38 /* NSDate+ObjectiveSheep.h in Headers */,
+				E590039412782F0F00599E38 /* NSFileManager+ObjectiveSheep.h in Headers */,
+				E590039612782F0F00599E38 /* NSString+ObjectiveSheep.h in Headers */,
+				E590039C12782F0F00599E38 /* OBSDownloader.h in Headers */,
+				E590039E12782F0F00599E38 /* ObjectiveSheep.h in Headers */,
+				E590039F12782F0F00599E38 /* OBSMacros.h in Headers */,
+				E59003A012782F0F00599E38 /* OBSRegexConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* ObjectiveSheep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveSheep" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				E54A2C14121AA55F0056487A /* generate Docset with doxygen */,
+			);
+			buildRules = (
+				E5D87A8A1119A4EF00801CDD /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = ObjectiveSheep;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = GroovyFrog;
+			productReference = 8DC2EF5B0486A6940098B216 /* ObjectiveSheep.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5432D7A110CC8F800B9DF5C /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5432D7F110CC8F900B9DF5C /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				E5432D77110CC8F800B9DF5C /* Sources */,
+				E5432D78110CC8F800B9DF5C /* Frameworks */,
+				E5432D79110CC8F800B9DF5C /* ShellScript */,
+			);
+			buildRules = (
+				E5D87AC71119AA0C00801CDD /* PBXBuildRule */,
+			);
+			dependencies = (
+				E5432DFA110CCE4800B9DF5C /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E5432D7B110CC8F800B9DF5C /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = ObjectiveSheep;
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OBSFoundation" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* GroovyFrog */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* ObjectiveSheep */,
+				E5432D7A110CC8F800B9DF5C /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5432D79110CC8F800B9DF5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		E54A2C14121AA55F0056487A /* generate Docset with doxygen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "generate Docset with doxygen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Build the doxygen documentation for the project and load the docset into Xcode \n#\n# Created by Fred McCann on 03/16/2010.\n# http://www.duckrowing.com\n#\n# Based on the build script provided by Apple:\n# http://developer.apple.com/tools/creatingdocsetswithdoxygen.html\n#\n# Set the variable $COMPANY_RDOMAIN_PREFIX equal to the reverse domain name of your comany\n# Example: com.duckrowing\n#\n\nDOXYGEN_PATH=/Applications/Doxygen.app/Contents/Resources/doxygen\nDOCSET_PATH=$SOURCE_ROOT/../build/$PRODUCT_NAME.docset\n\nif ! [ -f $SOURCE_ROOT/Doxyfile ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/Doxyfile\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/Doxyfile $TEMP_DIR/Doxyfile\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/Doxyfile\necho \"OUTPUT_DIRECTORY = $DOCSET_PATH\" >> $TEMP_DIR/Doxyfile\necho \"RECURSIVE = YES\" >> $TEMP_DIR/Doxyfile\necho \"EXTRACT_ALL        = YES\" >> $TEMP_DIR/Doxyfile\necho \"JAVADOC_AUTOBRIEF        = YES\" >> $TEMP_DIR/Doxyfile\necho \"GENERATE_LATEX        = NO\" >> $TEMP_DIR/Doxyfile\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/Doxyfile\necho \"DOCSET_FEEDNAME = $PRODUCT_NAME Documentation\" >> $TEMP_DIR/Doxyfile\necho \"DOCSET_BUNDLE_ID       = com.groovyfrog.$PRODUCT_NAME\" >> $TEMP_DIR/Doxyfile\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH $TEMP_DIR/Doxyfile\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $DOCSET_PATH/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f $TEMP_DIR/loadDocSet.scpt\n\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/com.groovyfrog.$PRODUCT_NAME.docset\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\nosascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0\n\t\t\t\t\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E590039112782F0F00599E38 /* NSArray+ObjectiveSheep.m in Sources */,
+				E590039312782F0F00599E38 /* NSDate+ObjectiveSheep.m in Sources */,
+				E590039512782F0F00599E38 /* NSFileManager+ObjectiveSheep.m in Sources */,
+				E590039712782F0F00599E38 /* NSString+ObjectiveSheep.m in Sources */,
+				E590039D12782F0F00599E38 /* OBSDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5432D77110CC8F800B9DF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53C666F1232589400B279E0 /* OBSStringTests.m in Sources */,
+				E597D8151237FA9D00D7CE82 /* Notifier.m in Sources */,
+				E584E8871250D55900383BF2 /* OBSDownloaderTest.m in Sources */,
+				E58056E31275BFEE00AF5171 /* NotificationsTest.m in Sources */,
+				E58056E41275BFEE00AF5171 /* Notified.m in Sources */,
+				E590038712782F0F00599E38 /* NSArray+ObjectiveSheep.m in Sources */,
+				E590038812782F0F00599E38 /* NSDate+ObjectiveSheep.m in Sources */,
+				E590038912782F0F00599E38 /* NSFileManager+ObjectiveSheep.m in Sources */,
+				E590038A12782F0F00599E38 /* NSString+ObjectiveSheep.m in Sources */,
+				E590038D12782F0F00599E38 /* OBSDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5432DFA110CCE4800B9DF5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* ObjectiveSheep */;
+			targetProxy = E5432DF9110CCE4800B9DF5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ObjectiveSheep_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = ObjectiveSheep;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ObjectiveSheep_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = ObjectiveSheep;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = ../../build/;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build/;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = ../../build/;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build/;
+			};
+			name = Release;
+		};
+		E5432D7D110CC8F900B9DF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E5432D7E110CC8F900B9DF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveSheep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OBSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5432D7F110CC8F900B9DF5C /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5432D7D110CC8F900B9DF5C /* Debug */,
+				E5432D7E110CC8F900B9DF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

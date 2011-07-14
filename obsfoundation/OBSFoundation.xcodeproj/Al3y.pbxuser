@@ -1,0 +1,212 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* GroovyFrog */;
+		codeSenseManager = 19191823111049ED000DC39D /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					778,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					754,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 286292119;
+			PBXWorkspaceStateSaveDate = 286292119;
+		};
+		perUserProjectItems = {
+			1900AF2C1110774F008AD68C = 1900AF2C1110774F008AD68C /* PBXTextBookmark */;
+			1900AF2D1110774F008AD68C = 1900AF2D1110774F008AD68C /* PBXTextBookmark */;
+			1900AF3B1110784F008AD68C = 1900AF3B1110784F008AD68C /* PBXTextBookmark */;
+			1900AF48111078D2008AD68C /* PBXTextBookmark */ = 1900AF48111078D2008AD68C /* PBXTextBookmark */;
+			1900AF49111078D2008AD68C /* PBXTextBookmark */ = 1900AF49111078D2008AD68C /* PBXTextBookmark */;
+			1900AF4A111078D2008AD68C /* PBXTextBookmark */ = 1900AF4A111078D2008AD68C /* PBXTextBookmark */;
+			1900AF51111078E3008AD68C /* PBXTextBookmark */ = 1900AF51111078E3008AD68C /* PBXTextBookmark */;
+			1900AF52111078E3008AD68C /* PBXTextBookmark */ = 1900AF52111078E3008AD68C /* PBXTextBookmark */;
+		};
+		sourceControlManager = 19191822111049ED000DC39D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	1900AF2C1110774F008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5A0ACF5110DCF4400B10F40 /* GroovyFrog.h */;
+		name = "GroovyFrog.h: 9";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 542;
+		vrLoc = 0;
+	};
+	1900AF2D1110774F008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1900AF2E1110774F008AD68C /* Al3y.pbxuser */;
+		name = "Al3y.pbxuser: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 523;
+		vrLoc = 0;
+	};
+	1900AF2E1110774F008AD68C /* Al3y.pbxuser */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = Al3y.pbxuser;
+		path = "/Users/Al3y/Documents/Progetti XCode/GroovyFrog/GroovyFrog.xcodeproj/Al3y.pbxuser";
+		sourceTree = "<absolute>";
+	};
+	1900AF3B1110784F008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1900AF3C1110784F008AD68C /* Al3y.pbxuser */;
+		name = "Al3y.pbxuser: 210";
+		rLen = 0;
+		rLoc = 6031;
+		rType = 0;
+		vrLen = 523;
+		vrLoc = 0;
+	};
+	1900AF3C1110784F008AD68C /* Al3y.pbxuser */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = Al3y.pbxuser;
+		path = "/Users/Al3y/Documents/Progetti XCode/GroovyFrog/GroovyFrog.xcodeproj/Al3y.pbxuser";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 2106}}";
+			sepNavSelRange = "{4473, 0}";
+			sepNavVisRange = "{16, 1157}";
+		};
+	};
+	1900AF48111078D2008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1900AF3C1110784F008AD68C /* Al3y.pbxuser */;
+		name = "Al3y.pbxuser: 155";
+		rLen = 0;
+		rLoc = 4473;
+		rType = 0;
+		vrLen = 1173;
+		vrLoc = 0;
+	};
+	1900AF49111078D2008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5A0ACF5110DCF4400B10F40 /* GroovyFrog.h */;
+		name = "GroovyFrog.h: 9";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 652;
+		vrLoc = 0;
+	};
+	1900AF4A111078D2008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5A0ACF5110DCF4400B10F40 /* GroovyFrog.h */;
+		name = "GroovyFrog.h: 9";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 652;
+		vrLoc = 0;
+	};
+	1900AF51111078E3008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5A0ACF5110DCF4400B10F40 /* GroovyFrog.h */;
+		name = "GroovyFrog.h: 18";
+		rLen = 0;
+		rLoc = 651;
+		rType = 0;
+		vrLen = 651;
+		vrLoc = 0;
+	};
+	1900AF52111078E3008AD68C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1900AF3C1110784F008AD68C /* Al3y.pbxuser */;
+		name = "Al3y.pbxuser: 155";
+		rLen = 0;
+		rLoc = 4473;
+		rType = 0;
+		vrLen = 1157;
+		vrLoc = 16;
+	};
+	19191822111049ED000DC39D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = GroovyFrog;
+			};
+		};
+	};
+	19191823111049ED000DC39D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8DC2EF4F0486A6940098B216 /* GroovyFrog */ = {
+		activeExec = 0;
+	};
+	E5432D7A110CC8F800B9DF5C /* Tests */ = {
+		activeExec = 0;
+	};
+	E5A0ACF5110DCF4400B10F40 /* GroovyFrog.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 391}}";
+			sepNavSelRange = "{651, 0}";
+			sepNavVisRange = "{0, 651}";
+			sepNavWindowFrame = "{{1, 73}, {1279, 703}}";
+		};
+	};
+	E5F8AE3E110F596D00749905 /* GFCalendar.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {966, 1417}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 747}";
+		};
+	};
+	E5F8AE3F110F596D00749905 /* GFCalendar.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {966, 7644}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{537, 456}";
+		};
+	};
+}

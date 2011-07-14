@@ -1,0 +1,186 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = E5432D7A110CC8F800B9DF5C /* Tests */;
+		codeSenseManager = 4D1B80301124567B00CF70D2 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					10,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 291124662;
+			PBXWorkspaceStateSaveDate = 291124662;
+		};
+		perUserProjectItems = {
+			4DC4570B115A344700B0ED5E /* PBXTextBookmark */ = 4DC4570B115A344700B0ED5E /* PBXTextBookmark */;
+			4DC4570C115A344700B0ED5E /* PBXTextBookmark */ = 4DC4570C115A344700B0ED5E /* PBXTextBookmark */;
+			4DC45718115A35D100B0ED5E /* PBXTextBookmark */ = 4DC45718115A35D100B0ED5E /* PBXTextBookmark */;
+			4DC45719115A35D100B0ED5E /* PBXBookmark */ = 4DC45719115A35D100B0ED5E /* PBXBookmark */;
+			4DC4571A115A35D100B0ED5E /* PBXTextBookmark */ = 4DC4571A115A35D100B0ED5E /* PBXTextBookmark */;
+			4DC4572C115A388A00B0ED5E /* PBXTextBookmark */ = 4DC4572C115A388A00B0ED5E /* PBXTextBookmark */;
+			4DC4572D115A388A00B0ED5E /* PBXTextBookmark */ = 4DC4572D115A388A00B0ED5E /* PBXTextBookmark */;
+			4DC4572E115A388A00B0ED5E /* XCBuildMessageTextBookmark */ = 4DC4572E115A388A00B0ED5E /* XCBuildMessageTextBookmark */;
+			4DC4572F115A388A00B0ED5E /* PBXTextBookmark */ = 4DC4572F115A388A00B0ED5E /* PBXTextBookmark */;
+		};
+		sourceControlManager = 4D1B802F1124567B00CF70D2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4D1B802F1124567B00CF70D2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = GroovyFrog;
+			};
+		};
+	};
+	4D1B80301124567B00CF70D2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	4DC4570B115A344700B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5F8AE3F110F596D00749905 /* GFCalendar.m */;
+		name = "GFCalendar.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 945;
+		vrLoc = 0;
+	};
+	4DC4570C115A344700B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5F8AE3F110F596D00749905 /* GFCalendar.m */;
+		name = "GFCalendar.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 11416;
+	};
+	4DC45718115A35D100B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5F8AE3F110F596D00749905 /* GFCalendar.m */;
+		name = "GFCalendar.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 11416;
+	};
+	4DC45719115A35D100B0ED5E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E548BD78110DA9500017BB38 /* NSString+GroovyFrog.m */;
+	};
+	4DC4571A115A35D100B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD78110DA9500017BB38 /* NSString+GroovyFrog.m */;
+		name = "NSString+GroovyFrog.m: 92";
+		rLen = 0;
+		rLoc = 2462;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 1373;
+	};
+	4DC4572C115A388A00B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD7F110DA9B70017BB38 /* GFStringTests.m */;
+		name = "GFStringTests.m: 87";
+		rLen = 0;
+		rLoc = 2286;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 2036;
+	};
+	4DC4572D115A388A00B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD77110DA9500017BB38 /* NSString+GroovyFrog.h */;
+		name = "NSString+GroovyFrog.h: 22";
+		rLen = 0;
+		rLoc = 849;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 0;
+	};
+	4DC4572E115A388A00B0ED5E /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible types in initialization";
+		fRef = E548BD78110DA9500017BB38 /* NSString+GroovyFrog.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 94;
+		rType = 1;
+	};
+	4DC4572F115A388A00B0ED5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E548BD78110DA9500017BB38 /* NSString+GroovyFrog.m */;
+		name = "NSString+GroovyFrog.m: 95";
+		rLen = 0;
+		rLoc = 2386;
+		rType = 0;
+		vrLen = 833;
+		vrLoc = 1694;
+	};
+	8DC2EF4F0486A6940098B216 /* GroovyFrog */ = {
+		activeExec = 0;
+	};
+	E5432D7A110CC8F800B9DF5C /* Tests */ = {
+		activeExec = 0;
+	};
+	E548BD77110DA9500017BB38 /* NSString+GroovyFrog.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {911, 445}}";
+			sepNavSelRange = "{849, 0}";
+			sepNavVisRange = "{0, 930}";
+		};
+	};
+	E548BD78110DA9500017BB38 /* NSString+GroovyFrog.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {911, 1605}}";
+			sepNavSelRange = "{2297, 0}";
+			sepNavVisRange = "{1659, 810}";
+		};
+	};
+	E548BD7F110DA9B70017BB38 /* GFStringTests.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {911, 2220}}";
+			sepNavSelRange = "{2410, 0}";
+			sepNavVisRange = "{2036, 690}";
+		};
+	};
+	E584524011528CDF00ED926E /* GFTask.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {911, 615}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 614}";
+		};
+	};
+	E5F8AE3F110F596D00749905 /* GFCalendar.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {911, 8970}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 644}";
+		};
+	};
+}
