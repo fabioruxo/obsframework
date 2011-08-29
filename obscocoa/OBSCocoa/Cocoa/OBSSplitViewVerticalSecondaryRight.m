@@ -78,48 +78,48 @@
 /**
  * The secondary pane will be fixed and not be resized when resizing the whole window
  */
-- (void)splitView:(NSSplitView *)sender resizeSubviewsWithOldSize:(NSSize) oldSize
-{
-    NSView *right = [[sender subviews] objectAtIndex:1];      
-    NSView *left = [[sender subviews] objectAtIndex:0];
-    
-    float dividerThickness = [sender dividerThickness];  
-    
-    NSRect newFrame = [sender frame];                          
-    
-    NSRect rightFrame = [right frame];                           
-    NSRect leftFrame = [left frame];           
-    
-                   
-    leftFrame.size.width = newFrame.size.width - rightFrame.size.width - dividerThickness; 
-    leftFrame.size.height = newFrame.size.height;
-    
-    rightFrame.size.width = newFrame.size.width - leftFrame.size.width - dividerThickness;
-    rightFrame.size.height = newFrame.size.height;   
-    
-    rightFrame.origin.x = leftFrame.size.width + dividerThickness; 
-    
-    [right setFrame:rightFrame];
-    [left setFrame:leftFrame];
-}
+//- (void)splitView:(NSSplitView *)sender resizeSubviewsWithOldSize:(NSSize) oldSize
+//{
+//    NSView *right = [[sender subviews] objectAtIndex:1];      
+//    NSView *left = [[sender subviews] objectAtIndex:0];
+//    
+//    float dividerThickness = [sender dividerThickness];  
+//    
+//    NSRect newFrame = [sender frame];                          
+//    
+//    NSRect rightFrame = [right frame];                           
+//    NSRect leftFrame = [left frame];           
+//    
+//                   
+//    leftFrame.size.width = newFrame.size.width - rightFrame.size.width - dividerThickness; 
+//    leftFrame.size.height = newFrame.size.height;
+//    
+//    rightFrame.size.width = newFrame.size.width - leftFrame.size.width - dividerThickness;
+//    rightFrame.size.height = newFrame.size.height;   
+//    
+//    rightFrame.origin.x = leftFrame.size.width + dividerThickness; 
+//    
+//    [right setFrame:rightFrame];
+//    [left setFrame:leftFrame];
+//}
 
-/**
- * Controls when the secondary pane size is dragged to the left
- */
-- (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat) proposedMinimumPosition ofSubviewAt:(NSInteger)dividerIndex;
-{
-    if ([self.secondaryPaneMaxSize floatValue] < 1) return MAX_SIZE_RIGHT_PANE_OBS; // If not set from Interface builder
-    return self.frame.size.width - [self.secondaryPaneMaxSize floatValue] - [splitView dividerThickness];
-}
-
-/**
- * Controls when the secondary pane size is dragged to the right
- */
-- (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat) proposedMaximumPosition ofSubviewAt:(NSInteger)dividerIndex;
-{
-    if ([self.secondaryPaneMinSize floatValue] < 1) return MIN_SIZE_RIGHT_PANE_OBS; // If not set from Interface builder
-    return self.frame.size.width - [self.secondaryPaneMinSize floatValue] - [splitView dividerThickness];
-}
+///**
+// * Controls when the secondary pane size is dragged to the left
+// */
+//- (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat) proposedMinimumPosition ofSubviewAt:(NSInteger)dividerIndex;
+//{
+//    if ([self.secondaryPaneMaxSize floatValue] < 1) return MAX_SIZE_RIGHT_PANE_OBS; // If not set from Interface builder
+//    return self.frame.size.width - [self.secondaryPaneMaxSize floatValue] - [splitView dividerThickness];
+//}
+//
+///**
+// * Controls when the secondary pane size is dragged to the right
+// */
+//- (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat) proposedMaximumPosition ofSubviewAt:(NSInteger)dividerIndex;
+//{
+//    if ([self.secondaryPaneMinSize floatValue] < 1) return MIN_SIZE_RIGHT_PANE_OBS; // If not set from Interface builder
+//    return self.frame.size.width - [self.secondaryPaneMinSize floatValue] - [splitView dividerThickness];
+//}
 
 - (void) finalize
 {
