@@ -49,4 +49,6 @@
 - (NSString*) stringByRemovingLeadingAndTrailingSpaces;
 
 + (NSString*) stringWithNewUUID;
+
++ (NSString *)stringByURLEncodingString:(NSString *)str;
 @end
