@@ -25,8 +25,6 @@
 		E51CC94E129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC942129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m */; };
 		E51CC94F129190C600F75DA2 /* NSString+ObjectiveSheep.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC944129190C600F75DA2 /* NSString+ObjectiveSheep.m */; };
 		E51CC950129190C600F75DA2 /* OBSDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC947129190C600F75DA2 /* OBSDownloader.m */; };
-		E51CC957129190D200F75DA2 /* OBSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */; };
-		E51CC958129190D200F75DA2 /* OBSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CC956129190D200F75DA2 /* OBSEntity.m */; };
 		E53B51B913422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B51B813422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +38,7 @@
 		32CA4F630368D1EE00C91783 /* OBSCocoa_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCocoa_Prefix.pch; sourceTree = "<group>"; };
 		747A80EA1348727A00280319 /* NSImage+ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ObjectiveSheep.h"; sourceTree = "<group>"; };
 		747A80EB1348727A00280319 /* NSImage+ObjectiveSheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ObjectiveSheep.m"; sourceTree = "<group>"; };
-		747A80EC1348727A00280319 /* OBSColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = OBSColoredView.h; sourceTree = "<group>"; };
+		747A80EC1348727A00280319 /* OBSColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSColoredView.h; sourceTree = "<group>"; };
 		747A80ED1348727A00280319 /* OBSColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSColoredView.m; sourceTree = "<group>"; };
 		747A80F01348739600280319 /* OBSSplitViewVerticalSecondaryRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSSplitViewVerticalSecondaryRight.h; sourceTree = "<group>"; };
 		747A80F11348739600280319 /* OBSSplitViewVerticalSecondaryRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSSplitViewVerticalSecondaryRight.m; sourceTree = "<group>"; };
@@ -72,11 +70,6 @@
 		E51CC948129190C600F75DA2 /* ObjectiveSheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSheep.h; sourceTree = "<group>"; };
 		E51CC949129190C600F75DA2 /* OBSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSMacros.h; sourceTree = "<group>"; };
 		E51CC94B129190C600F75DA2 /* OBSRegexConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSRegexConstants.h; sourceTree = "<group>"; };
-		E51CC952129190D200F75DA2 /* OBSCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCoreData.h; sourceTree = "<group>"; };
-		E51CC953129190D200F75DA2 /* OBSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSCoreDataManager.h; sourceTree = "<group>"; };
-		E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSCoreDataManager.m; sourceTree = "<group>"; };
-		E51CC955129190D200F75DA2 /* OBSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSEntity.h; sourceTree = "<group>"; };
-		E51CC956129190D200F75DA2 /* OBSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSEntity.m; sourceTree = "<group>"; };
 		E53B51B713422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSSplitViewVerticalSecondaryLeft.h; sourceTree = "<group>"; };
 		E53B51B813422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSSplitViewVerticalSecondaryLeft.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +124,6 @@
 		29B97314FDCFA39411CA2CEA /* OBSCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				E51CC951129190D200F75DA2 /* OBSCoreData */,
 				E51CC93B129190C600F75DA2 /* OBSFoundation */,
 				E51CC92A1291908300F75DA2 /* OBSCocoa */,
 				7756732906782D8800D1FEB8 /* Models */,
@@ -265,19 +257,6 @@
 			path = Regex;
 			sourceTree = "<group>";
 		};
-		E51CC951129190D200F75DA2 /* OBSCoreData */ = {
-			isa = PBXGroup;
-			children = (
-				E51CC952129190D200F75DA2 /* OBSCoreData.h */,
-				E51CC953129190D200F75DA2 /* OBSCoreDataManager.h */,
-				E51CC954129190D200F75DA2 /* OBSCoreDataManager.m */,
-				E51CC955129190D200F75DA2 /* OBSEntity.h */,
-				E51CC956129190D200F75DA2 /* OBSEntity.m */,
-			);
-			name = OBSCoreData;
-			path = ../OBSCoreData/OBSCoreData;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,8 +331,6 @@
 				E51CC94E129190C600F75DA2 /* NSFileManager+ObjectiveSheep.m in Sources */,
 				E51CC94F129190C600F75DA2 /* NSString+ObjectiveSheep.m in Sources */,
 				E51CC950129190C600F75DA2 /* OBSDownloader.m in Sources */,
-				E51CC957129190D200F75DA2 /* OBSCoreDataManager.m in Sources */,
-				E51CC958129190D200F75DA2 /* OBSEntity.m in Sources */,
 				E53B51B913422493007BC4C1 /* OBSSplitViewVerticalSecondaryLeft.m in Sources */,
 				747A80EE1348727A00280319 /* NSImage+ObjectiveSheep.m in Sources */,
 				747A80EF1348727A00280319 /* OBSColoredView.m in Sources */,
