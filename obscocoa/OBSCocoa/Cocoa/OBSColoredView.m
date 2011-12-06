@@ -42,7 +42,7 @@
     }
     else if ([self.color isEqualToString:@"darkGray"])
     {
-         [[NSColor colorWithCalibratedRed:0.160 green:0.174 blue:0.174 alpha:1.000] set];
+         [[NSColor colorWithCalibratedRed:0.259 green:0.269 blue:0.282 alpha:1.000] set];
     }
     else if ([self.color isEqualToString:@"black"])
     {
