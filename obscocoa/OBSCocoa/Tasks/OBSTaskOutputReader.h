@@ -27,6 +27,7 @@
 @property (readwrite) int timeoutSeconds;
 
 - (id) initWithTask:(NSTask *)aTask;
+- (void) launchTask;
 - (void) launchTaskAndRunSynchronous;
 - (NSData *)standardOutputData;
 - (NSData *)standardErrorData;

@@ -39,15 +39,21 @@
 	[task setStandardError:[NSPipe pipe]];
 }
 
+- (void) setCurrentDirectoryPath:(NSString*)path
+{
+    [task setCurrentDirectoryPath:path];
+}
+
 - (void) executeTask: (NSString *) processPath withArguments:(NSArray *) args
 {
+    [task setStandardInput:[NSPipe pipe]];
 	[task setLaunchPath:processPath];
 	[task setArguments:args];
-	
+
 	OBSTaskOutputReader *outputReader = [[OBSTaskOutputReader alloc] initWithTask:task];
 	
 	[outputReader launchTaskAndRunSynchronous];
-	
+	//[outputReader launchTask];
 	[output release];
 	[error release];
 	

@@ -24,6 +24,8 @@
 
 - (void) prepareTask;
 
+- (void) setCurrentDirectoryPath:(NSString*)path;
+
 - (void) executeTask: (NSString *) processPath withArguments:(NSArray *) args;
 
 - (void) executeTask: (NSString *) processPath withArguments:(NSArray *) args andTimeoutSeconds:(int) seconds;
