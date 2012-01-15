@@ -134,8 +134,6 @@
 - (void) launchTask
 {
     [task launch];
-	
-	BOOL isRunning = YES;
 }
 
 - (void)dealloc

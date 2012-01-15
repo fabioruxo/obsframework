@@ -11,6 +11,7 @@
  * ****************************************************************/
 
 #import <Cocoa/Cocoa.h>
+#import <QuartzCore/QuartzCore.h>
 #import "OBSMacros.h"
 
 @interface OBSColoredView : NSView 

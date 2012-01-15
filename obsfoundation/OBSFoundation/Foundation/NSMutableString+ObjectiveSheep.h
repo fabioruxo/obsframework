@@ -6,15 +6,14 @@
  *  This file contains Original Code.
  *  You may not use this file except if authorized by ObjectiveSheep 
  * -----------------------------------------------------------------
- *  Created by Fabio Russo on 25/01/2010 
+ *  Created by Fabio Russo on 15/01/2012 
  *
  * ****************************************************************/
 
-#import "OBSMacros.h"
-#import "NSString+ObjectiveSheep.h"
-#import "NSMutableString+ObjectiveSheep.h"
-#import "NSArray+ObjectiveSheep.h"
-#import "NSFileManager+ObjectiveSheep.h"
-#import "NSDate+ObjectiveSheep.h"
-#import "OBSRegexConstants.h"
-#import "OBSDownloader.h"
+#import <Foundation/Foundation.h>
+
+@interface NSMutableString (ObjectiveSheep)
+
+- (void) replaceString: (NSString *) stringToBeReplaced withString: (NSString *)  replacement;
+
+@end

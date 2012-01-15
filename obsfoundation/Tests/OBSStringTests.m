@@ -23,16 +23,16 @@
  */
 - (void) testReverse
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSString *str  = [NSString stringWithString:@"ciao"];
-	NSString *rev;
-	NSLog(@"Bla la bla");
-	rev = [str reverse];
-	
-	NSLog(@" -> Reversed: %@",rev); 
-	STAssertEqualObjects(rev,@"oaic", @"Expected oaic but was %@", rev);
-    NSLog(@"str retain count: %i", [rev retainCount]);
-	[pool drain];
+//	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+//	NSString *str  = [NSString stringWithString:@"ciao"];
+//	NSString *rev;
+//	NSLog(@"Bla la bla");
+//	rev = [str reverse];
+//	
+//	NSLog(@" -> Reversed: %@",rev); 
+//	STAssertEqualObjects(rev,@"oaic", @"Expected oaic but was %@", rev);
+//    NSLog(@"str retain count: %i", [rev retainCount]);
+//	[pool drain];
 }
 
 /**
@@ -68,10 +68,26 @@
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	NSString * ref = @"aaa 123 bbb";
 	
-	NSString * str  = [ref replace:@"123" with:@"456"];
+	NSString * str  = [ref stringByReplacingString:@"123" withString:@"456"];
 	NSLog(@" -> After replacement: %@", str);
 	
 	STAssertEqualObjects(str, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", str);
+	
+	[pool drain];
+}
+
+/**
+ * Tests the contains method
+ */
+-(void) testMutableReplace
+{
+	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+	NSMutableString * ref = [[NSMutableString alloc] initWithString:@"aaa 123 bbb"];
+	
+	[ref replaceString:@"123" withString:@"456"];
+	NSLog(@" -> After replacement: %@", ref);
+	
+	STAssertEqualObjects(ref, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", ref);
 	
 	[pool drain];
 }

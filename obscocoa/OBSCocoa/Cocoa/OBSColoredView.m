@@ -66,7 +66,23 @@
         
         fillRect = NO;
     }
-    if (fillRect) NSRectFill(rect);
+    if (fillRect)
+    {
+        NSRectFill(rect);
+        if ([self.color isEqualToString:@"darkGray"])
+        {
+            static CIImage *noisePattern = nil;
+            if(noisePattern == nil){
+                CIFilter *randomGenerator = [CIFilter filterWithName:@"CIColorMonochrome"];
+                [randomGenerator setValue:[[CIFilter filterWithName:@"CIRandomGenerator"] valueForKey:@"outputImage"]
+                                   forKey:@"inputImage"];
+                [randomGenerator setDefaults];
+                noisePattern = [randomGenerator valueForKey:@"outputImage"];
+            }
+            [noisePattern drawAtPoint:NSZeroPoint fromRect:self.bounds operation:NSCompositePlusLighter fraction:0.04];
+        }
+    }
+    
 }
 
 - (void) finalize
