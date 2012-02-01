@@ -147,5 +147,20 @@
     return [result autorelease];
 }
 
+// See: http://en.wikipedia.org/wiki/Percent-encoding
++(NSString*) stringByDecodingPercentEscapesInURL:(NSString*)str
+{
+    NSString *ret = @"";
+    
+    if ([str contains:@"%21"]) ret = [str stringByReplacingString:@"%21" withString:@"!"];
+    if ([str contains:@"%23"]) ret = [str stringByReplacingString:@"%23" withString:@"#"];
+    if ([str contains:@"%24"]) ret = [str stringByReplacingString:@"%24" withString:@"$"];
+    if ([str contains:@"%25"]) ret = [str stringByReplacingString:@"%25" withString:@"%"];
+    if ([str contains:@"%3A"]) ret = [str stringByReplacingString:@"%3A" withString:@":"];
+    if ([str contains:@"%3B"]) ret = [str stringByReplacingString:@"%3B" withString:@";"];
+    
+    else ret = str;
+    return ret;
+}
 @end
 

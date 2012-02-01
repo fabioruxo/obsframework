@@ -51,4 +51,6 @@
 + (NSString*) stringWithNewUUID;
 
 + (NSString *)stringByURLEncodingString:(NSString *)str;
+
+//+(NSString*) stringByReplacingPercentEscapesInURL:(NSString*)str;
 @end
