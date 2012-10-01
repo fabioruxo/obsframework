@@ -51,13 +51,13 @@
  */
 -(void) testContains 
 {
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * ref = @"aaa 123 bbb";
-	
-	STAssertTrue([ref contains:@"123"], @"String does not contain 123!");
-	STAssertTrue([ref contains:@" "], @"String does not contain white space!");
-	STAssertFalse([ref contains:@"456"], @"This one should have failed");
-	[pool drain];
+	@autoreleasepool {
+		NSString * ref = @"aaa 123 bbb";
+		
+		STAssertTrue([ref contains:@"123"], @"String does not contain 123!");
+		STAssertTrue([ref contains:@" "], @"String does not contain white space!");
+		STAssertFalse([ref contains:@"456"], @"This one should have failed");
+	}
 }
 
 /**
@@ -65,15 +65,15 @@
  */
 -(void) testReplace
 {
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * ref = @"aaa 123 bbb";
+	@autoreleasepool {
+		NSString * ref = @"aaa 123 bbb";
+		
+		NSString * str  = [ref stringByReplacingString:@"123" withString:@"456"];
+		NSLog(@" -> After replacement: %@", str);
+		
+		STAssertEqualObjects(str, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", str);
 	
-	NSString * str  = [ref stringByReplacingString:@"123" withString:@"456"];
-	NSLog(@" -> After replacement: %@", str);
-	
-	STAssertEqualObjects(str, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", str);
-	
-	[pool drain];
+	}
 }
 
 /**
@@ -81,15 +81,15 @@
  */
 -(void) testMutableReplace
 {
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSMutableString * ref = [[NSMutableString alloc] initWithString:@"aaa 123 bbb"];
+	@autoreleasepool {
+		NSMutableString * ref = [[NSMutableString alloc] initWithString:@"aaa 123 bbb"];
+		
+		[ref stringByReplacingString:@"123" withString:@"456"];
+		NSLog(@" -> After replacement: %@", ref);
+		
+		STAssertEqualObjects(ref, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", ref);
 	
-	[ref replaceString:@"123" withString:@"456"];
-	NSLog(@" -> After replacement: %@", ref);
-	
-	STAssertEqualObjects(ref, @"aaa 456 bbb", @"Expected aaa 456 bbb but was %@", ref);
-	
-	[pool drain];
+	}
 }
 
 /**
@@ -98,15 +98,15 @@
 
 -(void) testLastIndexOf
 {
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * ref;
+	@autoreleasepool {
+		NSString * ref;
+			
+		ref = @"bla.bla3.bla3";
+		NSRange r = [ref lastIndexOf:@"." inString:ref];
+		NSLog(@"Range is: %ld, %ld", r.length, r.location);
+		STAssertTrue( r.length > 0 , @"No match for lastIndexOf");
 		
-	ref = @"bla.bla3.bla3";
-	NSRange r = [ref lastIndexOf:@"." inString:ref];
-	NSLog(@"Range is: %d, %d", r.length, r.location);
-	STAssertTrue( r.length > 0 , @"No match for lastIndexOf");
-		
-	[pool drain];
+	}
 }
 
 /**
@@ -115,46 +115,46 @@
  */
 -(void) testMatchesRegex
 {
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * ref;
-	
-	ref = @"abc123";
-	STAssertTrue([ref matches: ALPHANUMERIC], @"No match for ALPHANUMERIC");
+	@autoreleasepool {
+		NSString * ref;
+		
+		ref = @"abc123";
+		STAssertTrue([ref matches: ALPHANUMERIC], @"No match for ALPHANUMERIC");
 
-	ref = @"abc123!!";
-	STAssertFalse([ref matches: ALPHANUMERIC], @"Should Not match ALPHANUMERIC");
-	
-	ref = @"a";
-	STAssertTrue([ref matches: CHAR], @"No match for CHAR");
-	
-	ref = @"aa";
-	STAssertTrue([ref matches: TWOCHARS], @"No match for TWOCHARS");
+		ref = @"abc123!!";
+		STAssertFalse([ref matches: ALPHANUMERIC], @"Should Not match ALPHANUMERIC");
+		
+		ref = @"a";
+		STAssertTrue([ref matches: CHAR], @"No match for CHAR");
+		
+		ref = @"aa";
+		STAssertTrue([ref matches: TWOCHARS], @"No match for TWOCHARS");
 
-	ref = @"0";
-	STAssertTrue([ref matches: NUMBER], @"No match for NUMBER");
+		ref = @"0";
+		STAssertTrue([ref matches: NUMBER], @"No match for NUMBER");
 
-	ref = @"0a";
-	STAssertFalse([ref matches: NUMBER], @"Should Not match NUMBER");
+		ref = @"0a";
+		STAssertFalse([ref matches: NUMBER], @"Should Not match NUMBER");
 
-	ref = @"7";
-	STAssertTrue([ref matches: DIGIT], @"No match for DIGIT");
+		ref = @"7";
+		STAssertTrue([ref matches: DIGIT], @"No match for DIGIT");
 
-	ref = @"77";
-	STAssertFalse([ref matches: DIGIT], @"Should Not match DIGIT");
-	
-	ref = @"10";
-	STAssertTrue([ref matches: POSITIVENUMBER], @"No match for POSITIVENUMBER");
-	
-	ref = @"12,33";
-	STAssertTrue([ref matches: DECIMALNUMBER], @"No match for DECIMALNUMBER");
-	
-	ref = @"fabio@objectivesheep.com";
-	STAssertTrue([ref matches: EMAIL], @"No match for EMAIL");
+		ref = @"77";
+		STAssertFalse([ref matches: DIGIT], @"Should Not match DIGIT");
+		
+		ref = @"10";
+		STAssertTrue([ref matches: POSITIVENUMBER], @"No match for POSITIVENUMBER");
+		
+		ref = @"12,33";
+		STAssertTrue([ref matches: DECIMALNUMBER], @"No match for DECIMALNUMBER");
+		
+		ref = @"fabio@objectivesheep.com";
+		STAssertTrue([ref matches: EMAIL], @"No match for EMAIL");
 
-	ref = @"fabio-objectivesheep.com";
-	STAssertFalse([ref matches: EMAIL], @"Should Not match EMAIL");
+		ref = @"fabio-objectivesheep.com";
+		STAssertFalse([ref matches: EMAIL], @"Should Not match EMAIL");
 	
-	[pool drain];
+	}
 }
 
 @end

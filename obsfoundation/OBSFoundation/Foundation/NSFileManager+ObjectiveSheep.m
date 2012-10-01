@@ -35,12 +35,12 @@ NSString *NSBundleFolder()
 NSString *NSApplicationSupportFolder()
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    return ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
+    return ([paths count] > 0) ? paths[0] : NSTemporaryDirectory();
 }
 
 NSString *NSApplicationSupportFolderForCurrentAPP()
 {
-	NSString *executableName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleExecutable"];
+	NSString *executableName = [[NSBundle mainBundle] infoDictionary][@"CFBundleExecutable"];
 	return [NSApplicationSupportFolder() stringByAppendingPathComponent:executableName];
 }
 
@@ -106,7 +106,7 @@ NSString *NSApplicationSupportFolderForCurrentAPP()
 	for (int i = 0; i < [resultsTmp count]; i++)
 	{
 		if (i>0) composedPath = [composedPath stringByAppendingString:@"/"];
-		composedPath = [composedPath stringByAppendingString:[resultsTmp objectAtIndex:i]];
+		composedPath = [composedPath stringByAppendingString:resultsTmp[i]];
 		[results addObject:composedPath];
 	}
 	return results;
@@ -128,7 +128,7 @@ NSString *NSApplicationSupportFolderForCurrentAPP()
 {
 	NSArray * paths = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:nil];
 	NSMutableArray *directories = [[NSMutableArray alloc] init];
-	for (NSString *path in paths)
+	for (__strong NSString *path in paths)
 	{
 		path = [path stringByAppendingString:path];
 		BOOL isDir = NO;

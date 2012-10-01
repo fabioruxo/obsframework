@@ -22,7 +22,7 @@
     NSDictionary *attrs = [attrTitle fontAttributesInRange:range];
     NSColor *textColor = [NSColor controlTextColor];
     if (attrs) {
-        textColor = [attrs objectForKey:NSForegroundColorAttributeName];
+        textColor = attrs[NSForegroundColorAttributeName];
     }
     return textColor;
 }
@@ -38,7 +38,6 @@
                       range:range];
     [attrTitle fixAttributesInRange:range];
     [self setAttributedTitle:attrTitle];
-    [attrTitle release];
 }
 
 @end

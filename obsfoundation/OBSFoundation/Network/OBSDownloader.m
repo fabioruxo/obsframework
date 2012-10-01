@@ -53,7 +53,7 @@
 	partialFilePath = [filePath stringByAppendingString:@".part"];
     
 	[[NSFileManager defaultManager] createFileAtPath:partialFilePath contents:[NSData data] attributes:nil];
-	fileHandle = [[NSFileHandle fileHandleForWritingAtPath: partialFilePath] retain];
+	fileHandle = [NSFileHandle fileHandleForWritingAtPath: partialFilePath];
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:OBSDownloadStarted object:nil];
 }
@@ -78,13 +78,5 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:OBSDownloadComplete object:nil];
 }
 
-- (void)dealloc 
-{
-    [connection release];
-    [partialFilePath release];
-    [filePath release];
-    [fileHandle release];
-    [super dealloc];
-}
 
 @end

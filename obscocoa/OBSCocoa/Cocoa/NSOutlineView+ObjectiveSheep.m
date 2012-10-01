@@ -35,7 +35,7 @@
     
     for (NSInteger i = 0; i < [items count]; i++) 
 	{
-        NSInteger row = [self rowForItem:[items objectAtIndex:i]];
+        NSInteger row = [self rowForItem:items[i]];
         if (row >= 0) 
 		{
             [newSelection addIndex:row];
@@ -44,7 +44,6 @@
     
     [self selectRowIndexes:newSelection byExtendingSelection:NO];
     
-    [newSelection release];
 }
 
 @end

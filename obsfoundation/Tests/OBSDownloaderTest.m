@@ -39,7 +39,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(downloadPartial) name:OBSDownloadUpdatedData object:nil];
     
-    dl = [[[OBSDownloader alloc] init] autorelease];
+    dl = [[OBSDownloader alloc] init];
     [dl downloadFromURL:@"http://objectivesheep.com/test/downloadtest.zip" toDestinationPath:@"/Users/fabioruxo/Desktop/OBSDownloaderTestFile.zip"];
 	
     while (!_isDone)

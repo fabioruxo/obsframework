@@ -29,7 +29,7 @@
     if (IsEmpty(self.secondaryPaneMinSize)) self.secondaryPaneMinSize = [NSNumber numberWithFloat:MIN_SIZE_LEFT_PANE];
     if (IsEmpty(self.secondaryPaneMaxSize)) self.secondaryPaneMaxSize = [NSNumber numberWithFloat:MAX_SIZE_LEFT_PANE];
     
-    NSView *secondaryView = [self.subviews objectAtIndex: secondaryViewIndex];
+    NSView *secondaryView = (self.subviews)[secondaryViewIndex];
     
     collapsableViewWidth = secondaryView.frame.size.width;
     
@@ -42,8 +42,8 @@
 
 - (IBAction) collapseSecondaryPane
 {
-    NSView *rightView = [self.subviews objectAtIndex: primaryViewIndex];
-    NSView *leftView = [self.subviews objectAtIndex: secondaryViewIndex];
+    NSView *rightView = (self.subviews)[primaryViewIndex];
+    NSView *leftView = (self.subviews)[secondaryViewIndex];
     
     if (!collapsed) collapsableViewWidth = leftView.frame.size.width;
     if (collapsableViewWidth > [self.secondaryPaneMaxSize floatValue]) collapsableViewWidth = [self.secondaryPaneMaxSize floatValue];
@@ -74,8 +74,8 @@
  */
 - (void)splitView:(NSSplitView *)sender resizeSubviewsWithOldSize:(NSSize) oldSize
 {
-    NSView *secondary = [[sender subviews] objectAtIndex:secondaryViewIndex];      
-    NSView *primary = [[sender subviews] objectAtIndex:primaryViewIndex];
+    NSView *secondary = [sender subviews][secondaryViewIndex];      
+    NSView *primary = [sender subviews][primaryViewIndex];
     float dividerThickness = [sender dividerThickness];         
     NSRect newFrame = [sender frame];                          
     
@@ -111,10 +111,4 @@
     return [self.secondaryPaneMaxSize floatValue];
 }
 
-- (void) finalize
-{
-    secondaryPaneMinSize = nil;
-    secondaryPaneMaxSize = nil;
-    [super finalize];
-}
 @end

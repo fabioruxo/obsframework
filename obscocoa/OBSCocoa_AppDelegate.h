@@ -21,7 +21,7 @@
     IBOutlet OBSSplitViewVerticalSecondaryRight *splitView2;
 }
 
-@property (nonatomic, retain) IBOutlet NSWindow *window;
+@property (nonatomic, strong) IBOutlet NSWindow *window;
 
 - (IBAction)collapseSplitViewSecondaryLeft:sender;
 - (IBAction)collapseSplitViewSecondaryRight:sender;

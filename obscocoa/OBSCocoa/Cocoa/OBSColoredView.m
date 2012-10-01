@@ -55,8 +55,8 @@
     }
     else if ([self.color isEqualToString:@"gradient"])
     {
-        NSGradient *gradient = [[[NSGradient alloc] initWithStartingColor:START_COLOR_GRADIENT 
-                                                              endingColor:END_COLOR_GRADIENT] autorelease];
+        NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:START_COLOR_GRADIENT 
+                                                              endingColor:END_COLOR_GRADIENT];
         [gradient drawInRect:[self bounds] angle:90.0];
 
         NSRect lineRect = [self bounds];
@@ -85,10 +85,5 @@
     
 }
 
-- (void) finalize
-{
-    color = nil;
-    [super finalize];
-}
 
 @end

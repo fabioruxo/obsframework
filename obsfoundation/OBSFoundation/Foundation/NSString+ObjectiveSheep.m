@@ -29,9 +29,9 @@
 + (NSString*) stringWithNewUUID
 {
     CFUUIDRef uuidObj = CFUUIDCreate(nil);
-    NSString *newUUID = (NSString*)CFUUIDCreateString(nil, uuidObj);
+    NSString *newUUID = (NSString*)CFBridgingRelease(CFUUIDCreateString(nil, uuidObj));
     CFRelease(uuidObj);
-    return [newUUID autorelease];
+    return newUUID;
 }
 
 + (NSString *) stringByConcatenatingStrings:(id) first, ...
@@ -97,16 +97,16 @@
 - (NSString*) stringByCapitalizingFirstCharacter
 {
 	NSMutableString* sc = [self mutableCopy];
-	if ([sc length] < 1) return [sc autorelease];
+	if ([sc length] < 1) return sc;
 	NSString* firstChar = [[self substringToIndex:1] 
 						   uppercaseString];
 	[sc replaceCharactersInRange:NSMakeRange(0,1) withString:firstChar];
-	return [sc autorelease];
+	return sc;
 }
 
 - (NSString*) stringWithFirstURLComponent
 {
-	NSMutableString *result = [[[NSMutableString alloc] init] autorelease];
+	NSMutableString *result = [[NSMutableString alloc] init];
 	NSString *schemePart = @"";
 	NSString *hostPart = @"";
 	NSScanner *scanner = [NSScanner scannerWithString:self];
@@ -117,7 +117,7 @@
 	[result appendString:schemePart];
 	[result appendString:@"://"];
 	[result appendString:hostPart];
-	return [[result copy] autorelease];
+	return [result copy];
 }
 
 - (NSString*) md5; 
@@ -143,8 +143,8 @@
 
 + (NSString *)stringByURLEncodingString:(NSString *)str
 {
-    NSString *result = (NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)str, NULL, CFSTR("?=&+"), kCFStringEncodingUTF8);
-    return [result autorelease];
+    NSString *result = (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)str, NULL, CFSTR("?=&+"), kCFStringEncodingUTF8));
+    return result;
 }
 
 // See: http://en.wikipedia.org/wiki/Percent-encoding

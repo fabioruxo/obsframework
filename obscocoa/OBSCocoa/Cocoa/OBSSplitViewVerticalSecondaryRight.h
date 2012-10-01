@@ -34,10 +34,10 @@
  * Set these properties from Interface Builder in the Custom-Class -> User defined variables section.
  * Otherwise they will simply default to MIN_SIZE_LEFT_PANE and MIN_SIZE_RIGHT_PANE
  */
-@property (nonatomic, retain) NSNumber *secondaryPaneMinSize;
-@property (nonatomic, retain) NSNumber *secondaryPaneMaxSize;
+@property (nonatomic, strong) NSNumber *secondaryPaneMinSize;
+@property (nonatomic, strong) NSNumber *secondaryPaneMaxSize;
 
-@property (nonatomic, assign) NSNumber * secondaryPaneSize;
+@property (nonatomic, strong) NSNumber * secondaryPaneSize;
 @property (nonatomic, assign) BOOL collapsed;
 
 - (IBAction) collapseSecondaryPane;

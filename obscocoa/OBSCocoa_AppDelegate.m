@@ -22,10 +22,5 @@
     [splitView2 collapseSecondaryPane];
 }
 
-- (void)dealloc 
-{
-    [window release];
-    [super dealloc];
-}
 
 @end

@@ -35,7 +35,7 @@
     if (IsEmpty(self.secondaryPaneMaxSize)) self.secondaryPaneMaxSize = [NSNumber numberWithFloat:MAX_SIZE_RIGHT_PANE_OBS];
     if (IsEmpty(self.secondaryPaneSize)) self.secondaryPaneSize = [NSNumber numberWithFloat:SECONDARY_PANE_SIZE_OBS];
     
-    NSView *secondaryView = [self.subviews objectAtIndex: secondaryViewIndex];
+    NSView *secondaryView = (self.subviews)[secondaryViewIndex];
     
     self.secondaryPaneSize = [NSNumber numberWithFloat:secondaryView.frame.size.width];
     self.collapsed = NO;
@@ -51,8 +51,8 @@
 
 - (IBAction) collapseSecondaryPane
 {
-    NSView *leftView = [self.subviews objectAtIndex: 0];
-    NSView *rightView = [self.subviews objectAtIndex: 1];
+    NSView *leftView = (self.subviews)[0];
+    NSView *rightView = (self.subviews)[1];
     
     if (!self.collapsed) collapsableViewWidth = rightView.frame.size.width;
     if (collapsableViewWidth < 1) collapsableViewWidth = [self.secondaryPaneMinSize floatValue];
@@ -121,12 +121,9 @@
 //    return self.frame.size.width - [self.secondaryPaneMinSize floatValue] - [splitView dividerThickness];
 //}
 
-- (void) finalize
+- (void) dealloc
 {
-    secondaryPaneMinSize = nil;
-    secondaryPaneMaxSize = nil;
     
     secondaryPaneSize = nil;
-    [super finalize];
 }
 @end
