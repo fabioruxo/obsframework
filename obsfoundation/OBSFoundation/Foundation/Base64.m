@@ -1,13 +1,16 @@
-//
-//  Base64.m
-//  Pins
-//
-//  Created by F + on 5/21/11.
-//  Copyright 2011 ObjectiveSheep. All rights reserved.
-//
+/* *****************************************************************
+ *                         ObjectiveSheep Framework
+ * -----------------------------------------------------------------
+ *  Copyright (c) 2010 ObjectiveSheep! All rights reserved.
+ *
+ *  This file contains Original Code.
+ *  You may not use this file except if authorized by ObjectiveSheep
+ * -----------------------------------------------------------------
+ *  Created by Fabio Russo on 26/01/2010
+ *
+ * ****************************************************************/
 
 #import "Base64.h"
-
 
 @implementation Base64
 

@@ -12,7 +12,6 @@
 
 #import "OBSMacros.h"
 #import "NSString+ObjectiveSheep.h"
-
 #import "NSArray+ObjectiveSheep.h"
 #import "NSFileManager+ObjectiveSheep.h"
 #import "NSDate+ObjectiveSheep.h"

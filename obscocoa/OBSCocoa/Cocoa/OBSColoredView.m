@@ -30,11 +30,15 @@
     BOOL fillRect = YES;
     if ([self.color isEqualToString:@"azure"])
     {
-        [[NSColor colorWithCalibratedRed:0.845 green:0.865 blue:0.896 alpha:1.000] set];
+        [[NSColor colorWithCalibratedWhite:0.945 alpha:0.900] set];
     }
     else if ([self.color isEqualToString:@"lightGray"])
     {
         [[NSColor colorWithCalibratedWhite:0.902 alpha:1.000] set];
+    }
+    else if ([self.color isEqualToString:@"white"])
+    {
+        [[NSColor colorWithCalibratedWhite:1.0 alpha:1.000] set];
     }
     else if ([self.color isEqualToString:@"gray"])
     {
@@ -69,18 +73,18 @@
     if (fillRect)
     {
         NSRectFill(rect);
-        if ([self.color isEqualToString:@"darkGray"])
-        {
-            static CIImage *noisePattern = nil;
-            if(noisePattern == nil){
-                CIFilter *randomGenerator = [CIFilter filterWithName:@"CIColorMonochrome"];
-                [randomGenerator setValue:[[CIFilter filterWithName:@"CIRandomGenerator"] valueForKey:@"outputImage"]
-                                   forKey:@"inputImage"];
-                [randomGenerator setDefaults];
-                noisePattern = [randomGenerator valueForKey:@"outputImage"];
-            }
-            [noisePattern drawAtPoint:NSZeroPoint fromRect:self.bounds operation:NSCompositePlusLighter fraction:0.04];
-        }
+//        if ([self.color isEqualToString:@"darkGray"])
+//        {
+//            static CIImage *noisePattern = nil;
+//            if(noisePattern == nil){
+//                CIFilter *randomGenerator = [CIFilter filterWithName:@"CIColorMonochrome"];
+//                [randomGenerator setValue:[[CIFilter filterWithName:@"CIRandomGenerator"] valueForKey:@"outputImage"]
+//                                   forKey:@"inputImage"];
+//                [randomGenerator setDefaults];
+//                noisePattern = [randomGenerator valueForKey:@"outputImage"];
+//            }
+//            [noisePattern drawAtPoint:NSZeroPoint fromRect:self.bounds operation:NSCompositePlusLighter fraction:0.04];
+//        }
     }
     
 }
