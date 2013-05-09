@@ -27,9 +27,4 @@
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
-- (void) finalize
-{
-    url = nil;
-    [super finalize];
-}
 @end

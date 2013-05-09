@@ -19,5 +19,5 @@
     IBOutlet NSString *color;
 }
 
-@property (nonatomic, retain) NSString *color;
+@property (nonatomic, strong) NSString *color;
 @end

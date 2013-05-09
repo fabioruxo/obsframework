@@ -71,7 +71,7 @@
 
 + (NSDate*) dateFromStringIgnoringTimezone:(NSString*) dateAsString
 {
-	NSDateFormatter *format = [[[NSDateFormatter alloc] init] autorelease];
+	NSDateFormatter *format = [[NSDateFormatter alloc] init];
 	[format setDateFormat:@"yyyy-MM-dd"];
 	[format setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	
@@ -81,7 +81,7 @@
 
 + (NSDate*) dateFromStringIgnoringTimezoneIncludingTime:(NSString*) dateAsString
 {
-	NSDateFormatter *format = [[[NSDateFormatter alloc] init] autorelease];
+	NSDateFormatter *format = [[NSDateFormatter alloc] init];
 	[format setDateFormat:@"yyyy-MM-dd HH:mm"];
 	[format setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	
@@ -95,7 +95,6 @@
 	[dateFormat setDateFormat:@"hh:mm a"];
 	[dateFormat setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	NSString *dateString = [dateFormat stringFromDate:theDate];
-	[dateFormat release];
 	return dateString;
 }
 
@@ -107,7 +106,6 @@
 	//[dateFormat setDateFormat:@"d B y"];
 	[dateFormat setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	NSString *dateString = [dateFormat stringFromDate:theDate];
-	[dateFormat release];
 	return dateString;
 }
 

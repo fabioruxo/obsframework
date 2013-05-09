@@ -44,7 +44,6 @@
     
     [self selectRowIndexes:newSelection byExtendingSelection:NO];
     
-    [newSelection release];
 }
 
 @end

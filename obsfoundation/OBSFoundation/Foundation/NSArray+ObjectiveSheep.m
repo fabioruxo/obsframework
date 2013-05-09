@@ -41,7 +41,7 @@
 		[copy removeObjectIdenticalTo:object];
 		[copy addObject:object];
 	}
-	return [copy autorelease];
+	return copy;
 }
 
 - (NSArray *) unionWithArray: (NSArray *) anArray;
@@ -52,7 +52,7 @@
 
 - (NSArray *) intersectionWithArray: (NSArray *) anArray;
 {
-	NSMutableArray *copy = [[self mutableCopy] autorelease];
+	NSMutableArray *copy = [self mutableCopy];
 	for (id object in self)
 		if (![anArray containsObject:object]) 
 			[copy removeObjectIdenticalTo:object];

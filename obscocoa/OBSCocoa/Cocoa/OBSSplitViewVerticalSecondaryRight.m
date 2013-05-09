@@ -121,12 +121,9 @@
 //    return self.frame.size.width - [self.secondaryPaneMinSize floatValue] - [splitView dividerThickness];
 //}
 
-- (void) finalize
+- (void) dealloc
 {
-    secondaryPaneMinSize = nil;
-    secondaryPaneMaxSize = nil;
     
     secondaryPaneSize = nil;
-    [super finalize];
 }
 @end

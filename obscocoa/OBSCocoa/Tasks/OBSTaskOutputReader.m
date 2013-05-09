@@ -24,7 +24,7 @@
 	self = [super init];
 	if (IsEmpty(self)) return nil;
 	
-	task = [aTask retain];
+	task = aTask;
 	standardOutput = [[NSMutableData alloc] init];
 	standardError = [[NSMutableData alloc] init];
 	timeoutSeconds = 0;
@@ -139,10 +139,6 @@
 - (void)dealloc
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	[standardOutput release];
-	[standardError release];
-	[task release];
-	[super dealloc];
 }
 
 @end

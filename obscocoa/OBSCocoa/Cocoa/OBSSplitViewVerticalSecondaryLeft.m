@@ -111,10 +111,4 @@
     return [self.secondaryPaneMaxSize floatValue];
 }
 
-- (void) finalize
-{
-    secondaryPaneMinSize = nil;
-    secondaryPaneMaxSize = nil;
-    [super finalize];
-}
 @end

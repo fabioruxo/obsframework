@@ -17,5 +17,5 @@
     NSString *url;
 }
 
-@property (nonatomic, readwrite, retain) NSString *url;
+@property (nonatomic, readwrite, strong) NSString *url;
 @end

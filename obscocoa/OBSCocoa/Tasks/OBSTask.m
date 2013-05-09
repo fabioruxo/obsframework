@@ -32,7 +32,6 @@
 
 - (void) prepareTask
 {
-	[task release];
 	task = nil;
 	task = [[NSTask alloc] init]; 
 	[task setStandardOutput:[NSPipe pipe]];
@@ -54,13 +53,10 @@
 	
 	[outputReader launchTaskAndRunSynchronous];
 	//[outputReader launchTask];
-	[output release];
-	[error release];
 	
 	output = [[NSString alloc] initWithData:[outputReader standardOutputData] encoding:NSUTF8StringEncoding];
 	error = [[NSString alloc] initWithData:[outputReader standardErrorData] encoding:NSUTF8StringEncoding];
 	
-	[outputReader release];
 }
 
 /*
@@ -82,21 +78,11 @@
 	[outputReader setTimeoutSeconds:seconds];
 	[outputReader launchTaskAndRunSynchronous];
 	
-	[output release];
-	[error release];
 	
 	output = [[NSString alloc] initWithData:[outputReader standardOutputData] encoding:NSUTF8StringEncoding];
 	error = [[NSString alloc] initWithData:[outputReader standardErrorData] encoding:NSUTF8StringEncoding];
 	
-	[outputReader release];
 }
 
-- (void) dealloc
-{
-	[task release];
-	[output release];
-	[error release];
-	[super dealloc];
-}
 
 @end

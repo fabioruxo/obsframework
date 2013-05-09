@@ -128,7 +128,7 @@ NSString *NSApplicationSupportFolderForCurrentAPP()
 {
 	NSArray * paths = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:nil];
 	NSMutableArray *directories = [[NSMutableArray alloc] init];
-	for (NSString *path in paths)
+	for (__strong NSString *path in paths)
 	{
 		path = [path stringByAppendingString:path];
 		BOOL isDir = NO;
