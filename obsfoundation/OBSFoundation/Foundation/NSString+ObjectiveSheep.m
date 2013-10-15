@@ -158,6 +158,7 @@
     if ([str contains:@"%25"]) ret = [str stringByReplacingString:@"%25" withString:@"%"];
     if ([str contains:@"%3A"]) ret = [str stringByReplacingString:@"%3A" withString:@":"];
     if ([str contains:@"%3B"]) ret = [str stringByReplacingString:@"%3B" withString:@";"];
+    if ([str contains:@"%E0"]) ret = [str stringByReplacingString:@"%E0" withString:@"à"];
     
     else ret = str;
     return ret;

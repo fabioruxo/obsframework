@@ -19,9 +19,10 @@
     float xOffset = NSMinX([self convertRect:[self frame] toView:nil]);
     float yOffset = NSMaxY([self convertRect:[self frame] toView:nil]);
     [[NSGraphicsContext currentContext] setPatternPhase:NSMakePoint(xOffset, yOffset)];
-    
     [[NSColor colorWithPatternImage:[NSImage imageNamed:@"page_background.png"]] set];
     [NSBezierPath fillRect:rect];
+    [[NSColor grayColor] set];
+    [NSBezierPath strokeRect:rect];
 }
 
 @end
