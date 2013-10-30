@@ -15,6 +15,9 @@
 #define START_COLOR_GRADIENT		[NSColor colorWithCalibratedWhite:0.75 alpha:1.0]
 #define END_COLOR_GRADIENT          [NSColor colorWithCalibratedWhite:0.90 alpha:1.0]
 
+#define START_DARK_GRADIENT         [NSColor colorWithCalibratedWhite:0.189 alpha:1.000]
+#define END_DARK_GRADIENT           [NSColor colorWithCalibratedWhite:0.289 alpha:1.000]
+
 @implementation OBSColoredView
 @synthesize color;
 
@@ -66,16 +69,11 @@
         [super drawRect:rect];
          [[NSColor colorWithCalibratedWhite:0.189 alpha:1.000] set];
     }
-//    else if ([self.color isEqualToString:@"black"])
-//    {
-//        [super drawRect:rect];
-//        [[NSColor colorWithCalibratedRed:0.115 green:0.126 blue:0.126 alpha:0.98] set];
-//    }
     else if ([self.color isEqualToString:@"black"])
     {
         self.layer.borderWidth = 0.5f;
         [super drawRect:rect];
-        [[NSColor blackColor] set];
+        [[NSColor colorWithCalibratedRed:0.115 green:0.126 blue:0.126 alpha:0.98] set];
         NSColor *gray = [NSColor grayColor];
         NSInteger numberOfComponents = [gray numberOfComponents];
         CGFloat components[numberOfComponents];
@@ -112,11 +110,26 @@
                                                               endingColor:END_COLOR_GRADIENT];
         [gradient drawInRect:[self bounds] angle:90.0];
 
-//        NSRect lineRect = [self bounds];
-//        lineRect.size.height = 1;
-//        [[NSColor grayColor] set];
-//        NSRectFill(lineRect);
-
+        self.layer.borderWidth = 0.5f;
+        
+        NSColor *gray = [NSColor darkGrayColor];
+        NSInteger numberOfComponents = [gray numberOfComponents];
+        CGFloat components[numberOfComponents];
+        CGColorSpaceRef colorSpace = [[gray colorSpace] CGColorSpace];
+        [gray getComponents:(CGFloat *)&components];
+        CGColorRef cgColor = CGColorCreate(colorSpace, components);
+        
+        self.layer.borderColor = cgColor;
+        
+        fillRect = NO;
+    }
+    else if ([self.color isEqualToString:@"gradientDark"])
+    {
+        [super drawRect:rect];
+        NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:START_DARK_GRADIENT
+                                                             endingColor:END_DARK_GRADIENT];
+        [gradient drawInRect:[self bounds] angle:90.0];
+        
         self.layer.borderWidth = 0.5f;
         
         NSColor *gray = [NSColor grayColor];
@@ -130,6 +143,8 @@
         
         fillRect = NO;
     }
+    //[NSColor colorWithCalibratedRed:0.258 green:0.255 blue:0.262 alpha:1.000]
+    
     else if ([self.color isEqualToString:@"gradientRounded"])
     {
         OBSLog(@"Here ... gradientRounded");
