@@ -43,7 +43,6 @@
     }
     
     [self selectRowIndexes:newSelection byExtendingSelection:NO];
-    
 }
 
 @end
