@@ -28,6 +28,11 @@
 	return [self componentsJoinedByString:@" "];
 }
 
+- (NSString *) stringValueWithSeparator:(NSString*) str;
+{
+	return [self componentsJoinedByString:str];
+}
+
 - (id) firstObject;
 {
 	return [self objectAtIndex:0];
