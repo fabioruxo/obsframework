@@ -23,7 +23,7 @@
 	UIImage* tmpImageFromContext = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 	UIImageView *tmpImageView = [[UIImageView alloc] initWithImage:tmpImageFromContext]; 
-	return [tmpImageView autorelease];
+	return tmpImageView;
 }
 
 @end

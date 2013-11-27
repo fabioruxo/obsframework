@@ -11,7 +11,7 @@
 
 #import "UIColor+ObjectiveSheep.h"
 
-#define vendColor(r, g, b) static UIColor *ret; if (ret == nil) ret = [[UIColor colorWithRed:(CGFloat)r/255.0 green:(CGFloat)g/255.0 blue:(CGFloat)b/255.0 alpha:1.0] retain]; return ret
+#define vendColor(r, g, b) static UIColor *ret; if (ret == nil) ret = [UIColor colorWithRed:(CGFloat)r/255.0 green:(CGFloat)g/255.0 blue:(CGFloat)b/255.0 alpha:1.0]; return ret
 
 @implementation UIColor(MoreColors)
 + (id)aliceBlue                                         {vendColor(240, 248, 255);}
