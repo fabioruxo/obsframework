@@ -215,7 +215,6 @@
 	return ([self laterDate:aDate] == self);
 }
 
-
 #pragma mark Adjusting Dates
 
 - (NSDate *) dateByAddingDays: (NSUInteger) dDays

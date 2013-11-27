@@ -52,5 +52,15 @@
 
 + (NSString *)stringByURLEncodingString:(NSString *)str;
 
-//+(NSString*) stringByReplacingPercentEscapesInURL:(NSString*)str;
+-(BOOL)equals:(NSString *)str;
+-(BOOL)equalsIgnoreCase:(NSString *)str;
+
+-(const char *)ascii;
++(NSString *)fromAscii:(const char *)c;
+
+-(const char *)utf8;
++(NSString *)fromUTF8:(const char *)c;
+
++(NSString *) stringFromURL:(NSString *)url;
+
 @end

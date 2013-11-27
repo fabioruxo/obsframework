@@ -158,10 +158,54 @@
     if ([str contains:@"%25"]) ret = [str stringByReplacingString:@"%25" withString:@"%"];
     if ([str contains:@"%3A"]) ret = [str stringByReplacingString:@"%3A" withString:@":"];
     if ([str contains:@"%3B"]) ret = [str stringByReplacingString:@"%3B" withString:@";"];
+    if ([str contains:@"%26"]) ret = [str stringByReplacingString:@"%26" withString:@"&"];
     if ([str contains:@"%E0"]) ret = [str stringByReplacingString:@"%E0" withString:@"à"];
+    if ([str contains:@"%3D"]) ret = [str stringByReplacingString:@"%3D" withString:@"="];
+    if ([str contains:@"%2F"]) ret = [str stringByReplacingString:@"%2F" withString:@"/"];
+    if ([str contains:@"%28"]) ret = [str stringByReplacingString:@"%28" withString:@"("];
+    if ([str contains:@"%29"]) ret = [str stringByReplacingString:@"%29" withString:@")"];
+    if ([str contains:@"%3F"]) ret = [str stringByReplacingString:@"%3F" withString:@"?"];
     
     else ret = str;
     return ret;
+}
+
+-(BOOL)equals:(NSString *)str
+{
+	return [self isEqual:str];
+}
+
+-(BOOL)equalsIgnoreCase:(NSString *)str
+{
+	return [self caseInsensitiveCompare:str] == NSOrderedSame;
+}
+
+-(const char *)ascii
+{
+	return [self cStringUsingEncoding:NSASCIIStringEncoding];
+}
+
++(NSString *)fromAscii:(const char *)c
+{
+	return [NSString stringWithCString:c encoding:NSASCIIStringEncoding];
+}
+
+-(const char *)utf8
+{
+	return [self cStringUsingEncoding:NSUTF8StringEncoding];
+}
+
++(NSString *)fromUTF8:(const char *)c
+{
+	return [NSString stringWithCString:c encoding:NSUTF8StringEncoding];
+}
+
++(NSString *) stringFromURL:(NSString *)url
+{
+	NSURL* u = [[NSURL alloc] initWithString:url];
+	NSString *str = [NSString stringWithContentsOfURL:u
+                                             encoding: NSUTF8StringEncoding error:nil];
+	return str;
 }
 @end
 
