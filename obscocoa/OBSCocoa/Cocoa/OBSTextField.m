@@ -35,7 +35,7 @@
 {
     NSRect oldFrame = [self frame];
     NSSize cellSize= [[self cell] cellSizeForBounds:[self bounds]];
-    OBSLog(@"%f", cellSize.height);
+    DLog(@"%f", cellSize.height);
     [self setFrame:NSMakeRect(oldFrame.origin.x, oldFrame.origin.y + oldFrame.size.height - cellSize.height, oldFrame.size.width, cellSize.height)];
 }
 

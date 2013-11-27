@@ -11,14 +11,16 @@
  * ****************************************************************/
 
 /**
- OBSLog will only log if the DEBUG=1 preprocessor macro is set in your debug configuration.
+ DLog will only log if the DEBUG=1 preprocessor macro is set in your debug configuration.
  In release nothing will be printed. Thanks to Uri Keller: http://zathras.de/angelweb/sourcecode.htm
  */
-#if DEBUG
-#define	OBSLog(args...)			NSLog( @"%s: %@", __PRETTY_FUNCTION__, [NSString stringWithFormat: args])
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#define	OBSLog(args...)			
+#   define DLog(...)
 #endif
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
 
 /**
  Thanks to Wil Shipley. This function will check anything for emptiness :-)

@@ -147,7 +147,7 @@
     
     else if ([self.color isEqualToString:@"gradientRounded"])
     {
-        OBSLog(@"Here ... gradientRounded");
+        DLog(@"Here ... gradientRounded");
         CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
 //        [super drawRect:rect];
         NSColor *color1 = [NSColor colorWithCalibratedRed:0.667 green:0.667 blue:0.667 alpha:1];
@@ -196,6 +196,5 @@
     }
     
 }
-
 
 @end
