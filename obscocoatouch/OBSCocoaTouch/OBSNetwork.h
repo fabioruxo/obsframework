@@ -26,6 +26,6 @@
 @property (readwrite) NetworkStatus networkStatus;
 
 + (OBSNetwork *)sharedInstance;
-- (BOOL) isNetworkAvailable:(BOOL)showAlert;
-
+- (BOOL) isNetworkAvailableWithAlert:(BOOL)showAlert;
+- (BOOL) isNetworkUnavailableWithAlert:(BOOL)showAlert;
 @end

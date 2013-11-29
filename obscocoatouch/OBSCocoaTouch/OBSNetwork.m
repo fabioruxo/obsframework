@@ -38,7 +38,12 @@ static OBSNetwork *sharedSingleton;
     [reach startNotifier];
 }
 
-- (BOOL) isNetworkAvailable:(BOOL)showAlert
+- (BOOL) isNetworkUnavailableWithAlert:(BOOL)showAlert
+{
+    return ![self isNetworkUnavailableWithAlert:showAlert];
+}
+
+- (BOOL) isNetworkAvailableWithAlert:(BOOL)showAlert
 {
     [self checkNetwork];
     if (sharedSingleton.networkStatus == NotReachable)
