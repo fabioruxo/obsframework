@@ -48,7 +48,7 @@
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     currentFileSize = 0;
-    totalFileSize = [response expectedContentLength];
+    totalFileSize = (NSInteger)[response expectedContentLength];
     
 	partialFilePath = [filePath stringByAppendingString:@".part"];
     
