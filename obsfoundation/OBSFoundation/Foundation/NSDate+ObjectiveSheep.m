@@ -262,6 +262,15 @@
 	return [CURRENT_CALENDAR dateFromComponents:components];
 }
 
+- (NSDate*) dateAtStartOfMonth
+{
+    NSDate *now = [NSDate date];
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *comp = [cal components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
+    [comp setDay:1];
+    return [cal dateFromComponents:comp];
+}
+
 - (NSDateComponents *) componentsWithOffsetFromDate: (NSDate *) aDate
 {
 	NSDateComponents *dTime = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:aDate toDate:self options:0];
