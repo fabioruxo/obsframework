@@ -15,4 +15,5 @@
 @interface NSImage (ObjectiveSheep)
 - (void) saveAsJpegWithName:(NSString*) fileName;
 - (NSData*) compressImage;
+- (NSImage *)resizeImage:(NSImage*)sourceImage toSize:(NSSize)size;
 @end

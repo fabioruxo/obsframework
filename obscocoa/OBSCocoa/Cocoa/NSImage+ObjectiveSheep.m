@@ -31,4 +31,24 @@
     imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
     return imageData;
 }
+
+- (NSImage *)resizeImage:(NSImage*)sourceImage toSize:(NSSize)size
+{
+    NSRect targetFrame = NSMakeRect(0, 0, size.width, size.height);
+    NSImage*  targetImage = [[NSImage alloc] initWithSize:size];
+
+    [targetImage lockFocus];
+
+    [sourceImage drawInRect:targetFrame
+                   fromRect:NSZeroRect       //portion of source image to draw
+                  operation:NSCompositeCopy  //compositing operation
+                   fraction:1.0              //alpha (transparency) value
+             respectFlipped:YES              //coordinate system
+                      hints:@{NSImageHintInterpolation:
+                              [NSNumber numberWithInt:NSImageInterpolationLow]}];
+
+    [targetImage unlockFocus];
+
+    return targetImage;
+}
 @end
