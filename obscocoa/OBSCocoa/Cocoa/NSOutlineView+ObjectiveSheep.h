@@ -16,6 +16,6 @@
 
 - (NSArray *)selectedItems;
 - (void)setSelectedItems:(NSArray *)items;
-
+- (void) resetSelection;
 @end
 

@@ -45,4 +45,8 @@
     [self selectRowIndexes:newSelection byExtendingSelection:NO];
 }
 
+- (void) resetSelection
+{
+    [self selectRowIndexes:[NSIndexSet indexSet] byExtendingSelection:NO];
+}
 @end
