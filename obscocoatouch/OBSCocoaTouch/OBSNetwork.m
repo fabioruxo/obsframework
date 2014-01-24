@@ -28,41 +28,38 @@ static OBSNetwork *sharedSingleton;
 
 - (void) checkNetwork
 {
-    Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
-    reach.reachableOnWWAN = YES;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(reachabilityChanged:)
-                                                 name:kReachabilityChangedNotification
-                                               object:nil];
-    [reach startNotifier];
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    self.networkStatus = [networkReachability currentReachabilityStatus];
 }
 
 - (BOOL) isNetworkUnavailableWithAlert:(BOOL)showAlert
 {
-    return ![self isNetworkUnavailableWithAlert:showAlert];
+    return ![self isNetworkAvailableWithAlert:showAlert];
 }
 
 - (BOOL) isNetworkAvailableWithAlert:(BOOL)showAlert
 {
     [self checkNetwork];
-    if (sharedSingleton.networkStatus == NotReachable)
+    if (self.networkStatus != NotReachable) return YES;
+    else
     {
-        if (showAlert)[sharedSingleton showNetworkUnavailableAlert];
+        if (showAlert)[self showNetworkUnavailableAlert];
         return NO;
     }
-    else return YES;
 }
 
-- (void) reachabilityChanged:(NSNotification*)notification
-{
-    Reachability* r = [notification object];
-	sharedSingleton.networkStatus = r.currentReachabilityStatus;
-}
+//- (void) reachabilityChanged:(NSNotification*)notification
+//{
+//    Reachability* r = [notification object];
+//    if (r.isReachableViaWWAN) self.networkStatus = ReachableViaWWAN;
+//    else if (r.isReachableViaWiFi) self.networkStatus = ReachableViaWiFi;
+//    else self.networkStatus = NotReachable;
+//    DLog(@"self.networkStatus = %d", self.networkStatus);
+//}
 
 - (void) showNetworkUnavailableAlert
 {
-    if (sharedSingleton.networkStatus == NotReachable)
+    if (self.networkStatus == NotReachable)
 	{
 		NSString* msg = @"Network unavailable; please try again later.";
 		UIAlertView* av = [[UIAlertView alloc] initWithTitle:nil
